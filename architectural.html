@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FOMUS ARCHITECTURAL - 建築用檜パネル・空間素材 | FOMUS</title>
+    <meta name="description" content="FOMUS ARCHITECTURALは日本の檜を使用した建築用壁面パネル・空間素材。設計者・建築家向けに一点ずつ製作。金箔加工対応、世界配送可能。ホテル・住宅・商業施設に最適。" />
+
+    <!-- OGP Tags -->
+    <meta property="og:title" content="FOMUS ARCHITECTURAL - 建築用檜パネル・空間素材" />
+    <meta property="og:description" content="日本の素材文化を建築のための思想として再構築。設計者と空間のための本質的な素材。" />
+    <meta property="og:image" content="https://fomusglobal.com/images/architectural-og.jpg" />
+    <meta property="og:url" content="https://fomusglobal.com/architectural.html" />
+    <meta property="og:type" content="product" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FOMUS ARCHITECTURAL - 建築用檜パネル・空間素材" />
+    <meta name="twitter:description" content="日本の素材文化を建築のための思想として再構築。設計者と空間のための本質的な素材。" />
+    <meta name="twitter:image" content="https://fomusglobal.com/images/architectural-og.jpg" />
+
+    <link rel="canonical" href="https://fomusglobal.com/architectural.html" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta name="theme-color" content="#1a1a1a" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --smoke: #575757;
+        --stone: #f2efe8;
+        --mist: #fbfaf7;
+        --gold: #c4a667;
+        --line: rgba(26, 26, 26, 0.12);
+        --shadow: 0 30px 60px rgba(0,0,0,0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Noto Sans JP", "Montserrat", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 20% 10%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 55%),
+          radial-gradient(circle at 80% 0%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 50%),
+          linear-gradient(180deg, #fdfbf7 0%, #f0ece5 100%);
+        line-height: 2.1;
+        letter-spacing: 0.04em;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .font-serif { font-family: "Noto Serif JP", serif; }
+      .font-cinzel { font-family: "Cinzel", serif; }
+      .font-montserrat { font-family: "Montserrat", sans-serif; }
+
+      .topbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        padding: 26px 0;
+        transition: 0.4s ease;
+        color: #fff;
+        mix-blend-mode: screen;
+      }
+      .topbar.scrolled {
+        background: rgba(253, 251, 247, 0.94);
+        color: var(--ink);
+        mix-blend-mode: normal;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+        padding: 16px 0;
+      }
+      .topbar-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .brand {
+        font-size: 16px;
+        letter-spacing: 0.32em;
+      }
+
+      .lang-selector {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border: 1px solid currentColor;
+        padding: 4px 10px;
+        font-size: 11px;
+      }
+      .lang-selector select {
+        background: transparent;
+        border: none;
+        color: inherit;
+        font-family: inherit;
+        font-size: 11px;
+        cursor: pointer;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      .lang-selector select option {
+        background: var(--mist);
+        color: var(--ink);
+      }
+
+      /* Accessibility - Focus Styles */
+      a:focus, button:focus, select:focus {
+        outline: 2px solid var(--gold);
+        outline-offset: 2px;
+      }
+
+      /* RTL Support */
+      [dir="rtl"] { text-align: right; }
+      [dir="rtl"] .topbar-inner { flex-direction: row-reverse; }
+      [dir="rtl"] .section { direction: rtl; }
+      [dir="rtl"] .process-grid { direction: rtl; }
+
+      .hero {
+        position: relative;
+        height: 92vh;
+        min-height: 560px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        overflow: hidden;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0) 100%);
+        z-index: 1;
+      }
+      .hero-media {
+        position: absolute;
+        inset: 0;
+      }
+      .hero-title {
+        position: relative;
+        z-index: 2;
+        color: #f7f5ef;
+        text-shadow: 0 16px 40px rgba(0,0,0,0.45);
+        padding: 0 40px 90px;
+        max-width: 620px;
+      }
+      .hero-title h1 {
+        font-size: clamp(2.6rem, 7vw, 4.6rem);
+        letter-spacing: 0.18em;
+        font-weight: 500;
+      }
+      .hero-title p {
+        font-size: 11px;
+        letter-spacing: 0.46em;
+        text-transform: uppercase;
+        margin-top: 16px;
+        color: rgba(247,245,239,0.8);
+      }
+
+      .page {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 90px 40px 160px;
+      }
+
+      .section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 100px 0;
+        border-bottom: 1px solid var(--line);
+        opacity: 0;
+        transform: translateY(20px);
+        animation: reveal 1.1s ease forwards;
+      }
+      .section:nth-of-type(1) { animation-delay: 0.15s; }
+      .section:nth-of-type(2) { animation-delay: 0.25s; }
+      .section:nth-of-type(3) { animation-delay: 0.35s; }
+      .section:nth-of-type(4) { animation-delay: 0.45s; }
+      .section:nth-of-type(5) { animation-delay: 0.55s; }
+      .section:nth-of-type(6) { animation-delay: 0.65s; }
+      .section:nth-of-type(7) { animation-delay: 0.75s; }
+      .section:last-of-type { border-bottom: none; }
+      .section.no-media {
+        grid-template-columns: 1fr;
+      }
+
+      @keyframes reveal {
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .section-head {
+        display: grid;
+        gap: 18px;
+      }
+      .section-eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+      .section-title {
+        font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+        letter-spacing: 0.08em;
+      }
+      .section-text {
+        color: var(--smoke);
+        font-size: 13px;
+      }
+      .section-text p + p { margin-top: 16px; }
+
+      .media-frame {
+        position: relative;
+        border-radius: 2px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+      .media-frame::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border: 1px solid rgba(255,255,255,0.3);
+        pointer-events: none;
+      }
+
+      .signature {
+        background: var(--mist);
+        padding: 60px;
+        border: 1px solid var(--line);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+      }
+
+      .app-slider {
+        display: flex;
+        gap: 22px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding: 6px 2px 16px;
+        margin-top: 24px;
+      }
+      .app-slider::-webkit-scrollbar {
+        height: 6px;
+      }
+      .app-slider::-webkit-scrollbar-track {
+        background: rgba(26, 26, 26, 0.08);
+        border-radius: 999px;
+      }
+      .app-slider::-webkit-scrollbar-thumb {
+        background: rgba(26, 26, 26, 0.35);
+        border-radius: 999px;
+      }
+      .app-slide {
+        flex: 0 0 min(78vw, 520px);
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 18px 20px 22px;
+        scroll-snap-align: center;
+        box-shadow: 0 16px 36px rgba(0,0,0,0.08);
+      }
+      .app-slide .media-frame {
+        aspect-ratio: 4 / 3;
+      }
+      .app-slide .media-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .app-card-title {
+        font-size: 11px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 8px;
+        margin-top: 14px;
+      }
+      .app-card-text {
+        font-size: 12.5px;
+        color: var(--smoke);
+        line-height: 1.9;
+      }
+      .app-dots {
+        display: flex;
+        gap: 10px;
+        margin-top: 16px;
+      }
+      .app-dot {
+        width: 28px;
+        height: 2px;
+        background: rgba(26, 26, 26, 0.2);
+        transition: background 0.3s ease, transform 0.3s ease;
+      }
+      .app-dot:hover {
+        background: rgba(26, 26, 26, 0.5);
+        transform: scaleX(1.2);
+      }
+
+      .process-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+      .process-item {
+        position: relative;
+        padding: 26px 28px 24px;
+        background: #fbfaf6;
+        border: 1px solid var(--line);
+      }
+      .process-item::after {
+        content: attr(data-step);
+        position: absolute;
+        top: 16px;
+        right: 18px;
+        font-family: "Cinzel", serif;
+        font-size: 22px;
+        letter-spacing: 0.2em;
+        color: rgba(196,166,103,0.45);
+      }
+      .process-title {
+        font-size: 11px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--smoke);
+        margin-bottom: 12px;
+      }
+      .process-text {
+        font-size: 13px;
+        color: var(--smoke);
+        line-height: 2;
+      }
+
+      .grid-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 12px 26px;
+        border: 1px solid var(--ink);
+        font-size: 11px;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        background: transparent;
+        transition: 0.3s ease;
+      }
+      .cta:hover {
+        background: var(--ink);
+        color: #fff;
+      }
+
+      .footer {
+        border-top: 1px solid var(--line);
+        padding: 40px 0 20px;
+        font-size: 11px;
+        color: var(--smoke);
+        text-align: center;
+      }
+
+      @media (min-width: 900px) {
+        .section {
+          grid-template-columns: 1.1fr 0.9fr;
+          align-items: center;
+          gap: 70px;
+        }
+        .section.reverse {
+          grid-template-columns: 0.9fr 1.1fr;
+        }
+        .section.reverse .section-head { order: 2; }
+        .section.reverse .media-frame { order: 1; }
+        .section.no-media {
+          grid-template-columns: 1fr;
+        }
+        .grid-gallery {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .process-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .app-slide {
+          flex-basis: min(52vw, 520px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar" id="topbar" role="banner">
+      <div class="topbar-inner">
+        <a class="brand font-cinzel" href="index.html" aria-label="FOmusトップページへ">FOMUS</a>
+        <div class="lang-selector">
+          <i data-lucide="globe" style="width:12px;"></i>
+          <select id="lang-select">
+            <option value="ja">JP</option>
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+            <option value="ar">عربي</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-media">
+        <img src="画像/FOMUS%20ARCHITECTURAL.JPG" alt="日本の檜を使用した建築用壁面パネル FOMUS ARCHITECTURAL" loading="lazy">
+      </div>
+      <div class="hero-title">
+        <h1 class="font-cinzel">FOMUS ARCHITECTURAL</h1>
+        <p class="font-montserrat">Curating the Essence of Japanese Craft</p>
+      </div>
+    </section>
+
+    <main class="page">
+      <section class="section">
+        <div class="section-head">
+          <span class="section-eyebrow font-montserrat">Concept</span>
+          <h2 class="section-title font-serif">FOMUS ARCHITECTURAL とは</h2>
+          <div class="section-text font-serif">
+            <p>FOMUS ARCHITECTURAL は、日本の素材文化を「建築のための思想」として再構築するプロダクトラインです。</p>
+            <p>私たちは、完成されたデザインを押し付けることはしません。提供するのは、空間をつくるための「本質的な素材」。</p>
+            <p>それをどう使うかは、設計者と空間が決める。FOMUSは、その創造の起点となります。</p>
+          </div>
+        </div>
+        <div class="media-frame">
+          <img src="画像/MASU%20TOP.jpg" alt="FOMUS material">
+        </div>
+      </section>
+
+      <section class="section reverse">
+        <div class="section-head">
+          <span class="section-eyebrow font-montserrat">Material</span>
+          <h2 class="section-title font-serif">The Material<br>素材という思想</h2>
+          <div class="section-text font-serif">
+            <p>FOMUS ARCHITECTURAL では、日本国内で育まれた檜（ひのき）を厳選して使用しています。</p>
+            <p>建築や建具のために育てられた木材の中から、質・香り・密度に優れたものだけを選び抜き、空間素材として再構築しています。</p>
+            <p>檜が持つ静かな存在感、触れた瞬間に伝わる温度、時を重ねることで深まる表情。それらは、空間に自然な品格をもたらします。</p>
+          </div>
+        </div>
+        <div class="media-frame">
+          <img src="画像/%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88%EF%BC%91.JPG" alt="Craft detail">
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="section-eyebrow font-montserrat">Philosophy</span>
+          <h2 class="section-title font-serif">Material Philosophy<br>素材への思想</h2>
+          <div class="section-text font-serif">
+            <p>FOMUSは、素材そのものの美しさを損なわないことを最優先にしています。</p>
+            <p>独自の表面処理により、日常使用に適した安定性を保ちながら、木が本来持つ質感や呼吸を閉ざすことはありません。</p>
+            <p>また、一部のプロジェクトでは日本の伝統技法である金箔加工を施すことも可能です。</p>
+          </div>
+        </div>
+        <div class="media-frame">
+          <img src="画像/Material%20Philosophy%EF%BD%9C.jpg" alt="Material finish">
+        </div>
+      </section>
+
+      <section class="section no-media">
+        <div class="section-head">
+          <span class="section-eyebrow font-montserrat">Applications</span>
+          <h2 class="section-title font-serif">Applications｜空間への展開</h2>
+          <div class="section-text font-serif">
+            <p>FOMUS ARCHITECTURAL は、用途を限定しません。</p>
+            <p>天井、間仕切り、柱や什器へ。空間の核として静かな品格を宿すことができます。</p>
+          </div>
+          <div class="app-slider font-serif" aria-label="Applications slider">
+            <div class="app-slide" id="app-slide-1">
+              <div class="media-frame">
+                <img src="画像/%E9%87%91%E7%AE%94%E3%80%80%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%AB.JPG" alt="Wall application">
+              </div>
+              <div class="app-card-title">Wall｜壁</div>
+              <div class="app-card-text">光と陰影を柔らかく制御し、視線を受け止める面として空間の品格を整えます。</div>
+            </div>
+            <div class="app-slide" id="app-slide-2">
+              <div class="media-frame">
+                <img src="画像/FOMUS%20ARCHITECTURAL.JPG" alt="Partition application">
+              </div>
+              <div class="app-card-title">Partition｜間仕切り</div>
+              <div class="app-card-text">視線を遮りながら空気を通す。開閉感を保ちつつ、余白と奥行きを生み出します。</div>
+            </div>
+            <div class="app-slide" id="app-slide-3">
+              <div class="media-frame">
+                <img src="画像/IMG_5518.JPG" alt="Column and furniture application">
+              </div>
+              <div class="app-card-title">Column &amp; Furniture｜柱・什器</div>
+              <div class="app-card-text">象徴的な存在へ。空間の重心を整え、記憶に残る輪郭をつくります。</div>
+            </div>
+          </div>
+          <div class="app-dots" aria-hidden="true">
+            <a class="app-dot" href="#app-slide-1"></a>
+            <a class="app-dot" href="#app-slide-2"></a>
+            <a class="app-dot" href="#app-slide-3"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section no-media">
+        <div class="signature">
+          <div class="section-head">
+            <span class="section-eyebrow font-montserrat">For Professionals</span>
+            <h2 class="section-title font-serif">設計者と空間のために</h2>
+            <div class="section-text font-serif">
+              <p>FOMUS ARCHITECTURAL は、設計者・建築家・空間デザイナーのための素材です。</p>
+              <p>設計思想を制限せず、創造の自由度を最大限に残すことを目的としています。</p>
+              <p>仕様や施工条件については、プロフェッショナル向けに個別でご案内いたします。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section no-media">
+        <div class="section-head">
+          <span class="section-eyebrow font-montserrat">Process</span>
+          <h2 class="section-title font-serif">プロジェクトの流れ</h2>
+        </div>
+        <div class="process-grid font-serif">
+          <div class="process-item" data-step="01">
+            <div class="process-title">Inquiry</div>
+            <div class="process-text">用途・設置環境・数量などをお知らせください。</div>
+          </div>
+          <div class="process-item" data-step="02">
+            <div class="process-title">Specification Sharing</div>
+            <div class="process-text">素材仕様・サイズ・納期目安をご案内します。</div>
+          </div>
+          <div class="process-item" data-step="03">
+            <div class="process-title">Production</div>
+            <div class="process-text">国内工房にて一点ずつ製作。</div>
+          </div>
+          <div class="process-item" data-step="04">
+            <div class="process-title">Global Delivery</div>
+            <div class="process-text">日本より世界各地へお届けします。</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section no-media">
+        <div class="section-head">
+          <span class="section-eyebrow font-montserrat">Contact</span>
+          <h2 class="section-title font-serif">A Material That Speaks Quietly</h2>
+          <div class="section-text font-serif">
+            <p>FOMUS ARCHITECTURAL は、語りすぎることはありません。</p>
+            <p>しかし、触れた人、空間に身を置いた人には、確かな違いとして伝わります。</p>
+            <p>プロジェクトのご相談・お見積りは、下記よりお気軽にお問い合わせください。</p>
+          </div>
+          <a class="cta font-montserrat" href="index.html#contact">Request Information / Consultation</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="font-cinzel" style="letter-spacing: 0.2em; margin-bottom: 8px;">FOMUS</div>
+      <div>&copy; FOMUS. All rights reserved.</div>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        document.getElementById("topbar").classList.toggle("scrolled", window.scrollY > 60);
+      });
+
+      const content = {
+        ja: {
+          heroTitle: "FOMUS ARCHITECTURAL",
+          heroSub: "Curating the Essence of Japanese Craft",
+          conceptEyebrow: "Concept",
+          conceptTitle: "FOMUS ARCHITECTURAL とは",
+          conceptText: [
+            "FOMUS ARCHITECTURAL は、日本の素材文化を「建築のための思想」として再構築するプロダクトラインです。",
+            "私たちは、完成されたデザインを押し付けることはしません。提供するのは、空間をつくるための「本質的な素材」。",
+            "それをどう使うかは、設計者と空間が決める。FOMUSは、その創造の起点となります。"
+          ],
+          materialEyebrow: "Material",
+          materialTitle: "The Material\n素材という思想",
+          materialText: [
+            "FOMUS ARCHITECTURAL では、日本国内で育まれた檜（ひのき）を厳選して使用しています。",
+            "建築や建具のために育てられた木材の中から、質・香り・密度に優れたものだけを選び抜き、空間素材として再構築しています。",
+            "檜が持つ静かな存在感、触れた瞬間に伝わる温度、時を重ねることで深まる表情。それらは、空間に自然な品格をもたらします。"
+          ],
+          philosophyEyebrow: "Philosophy",
+          philosophyTitle: "Material Philosophy\n素材への思想",
+          philosophyText: [
+            "FOMUSは、素材そのものの美しさを損なわないことを最優先にしています。",
+            "独自の表面処理により、日常使用に適した安定性を保ちながら、木が本来持つ質感や呼吸を閉ざすことはありません。",
+            "また、一部のプロジェクトでは日本の伝統技法である金箔加工を施すことも可能です。"
+          ],
+          appEyebrow: "Applications",
+          appTitle: "Applications｜空間への展開",
+          appIntro: ["FOMUS ARCHITECTURAL は、用途を限定しません。", "天井、間仕切り、柱や什器へ。空間の核として静かな品格を宿すことができます。"],
+          appWall: "Wall｜壁",
+          appWallText: "光と陰影を柔らかく制御し、視線を受け止める面として空間の品格を整えます。",
+          appPartition: "Partition｜間仕切り",
+          appPartitionText: "視線を遮りながら空気を通す。開閉感を保ちつつ、余白と奥行きを生み出します。",
+          appColumn: "Column & Furniture｜柱・什器",
+          appColumnText: "象徴的な存在へ。空間の重心を整え、記憶に残る輪郭をつくります。",
+          proEyebrow: "For Professionals",
+          proTitle: "設計者と空間のために",
+          proText: [
+            "FOMUS ARCHITECTURAL は、設計者・建築家・空間デザイナーのための素材です。",
+            "設計思想を制限せず、創造の自由度を最大限に残すことを目的としています。",
+            "仕様や施工条件については、プロフェッショナル向けに個別でご案内いたします。"
+          ],
+          processEyebrow: "Process",
+          processTitle: "プロジェクトの流れ",
+          process1: "Inquiry",
+          process1Text: "用途・設置環境・数量などをお知らせください。",
+          process2: "Specification Sharing",
+          process2Text: "素材仕様・サイズ・納期目安をご案内します。",
+          process3: "Production",
+          process3Text: "国内工房にて一点ずつ製作。",
+          process4: "Global Delivery",
+          process4Text: "日本より世界各地へお届けします。",
+          contactEyebrow: "Contact",
+          contactTitle: "A Material That Speaks Quietly",
+          contactText: [
+            "FOMUS ARCHITECTURAL は、語りすぎることはありません。",
+            "しかし、触れた人、空間に身を置いた人には、確かな違いとして伝わります。",
+            "プロジェクトのご相談・お見積りは、下記よりお気軽にお問い合わせください。"
+          ],
+          contactButton: "Request Information / Consultation"
+        },
+        en: {
+          heroTitle: "FOMUS ARCHITECTURAL",
+          heroSub: "Curating the Essence of Japanese Craft",
+          conceptEyebrow: "Concept",
+          conceptTitle: "What is FOMUS ARCHITECTURAL",
+          conceptText: [
+            "FOMUS ARCHITECTURAL is a product line that reconstructs Japanese material culture as 'architectural philosophy'.",
+            "We do not impose finished designs. What we provide are 'essential materials' for creating spaces.",
+            "How to use them is decided by the designer and the space. FOMUS becomes the starting point of that creation."
+          ],
+          materialEyebrow: "Material",
+          materialTitle: "The Material\nPhilosophy of Materials",
+          materialText: [
+            "FOMUS ARCHITECTURAL uses carefully selected hinoki cypress cultivated in Japan.",
+            "From wood grown for architecture and fittings, we select only those with excellent quality, fragrance, and density, reconstructing them as spatial materials.",
+            "The quiet presence of hinoki, the warmth conveyed at touch, the expression that deepens over time. These bring natural dignity to spaces."
+          ],
+          philosophyEyebrow: "Philosophy",
+          philosophyTitle: "Material Philosophy",
+          philosophyText: [
+            "FOMUS prioritizes not compromising the beauty of the material itself.",
+            "Through proprietary surface treatment, we maintain stability suitable for daily use while not closing off the texture and breathing that wood naturally possesses.",
+            "For some projects, traditional Japanese gold leaf processing is also possible."
+          ],
+          appEyebrow: "Applications",
+          appTitle: "Applications | Spatial Development",
+          appIntro: ["FOMUS ARCHITECTURAL does not limit applications.", "To ceilings, partitions, pillars and fixtures. It can embody quiet dignity as the core of a space."],
+          appWall: "Wall",
+          appWallText: "Softly controlling light and shadow, it arranges the dignity of the space as a surface that catches the eye.",
+          appPartition: "Partition",
+          appPartitionText: "Blocking sight while allowing air through. Creating margin and depth while maintaining a sense of openness.",
+          appColumn: "Column & Furniture",
+          appColumnText: "Becoming a symbolic presence. Arranging the center of gravity of the space and creating memorable contours.",
+          proEyebrow: "For Professionals",
+          proTitle: "For Designers and Spaces",
+          proText: [
+            "FOMUS ARCHITECTURAL is a material for designers, architects, and space designers.",
+            "Its purpose is to maximize creative freedom without limiting design philosophy.",
+            "Specifications and construction conditions are individually guided for professionals."
+          ],
+          processEyebrow: "Process",
+          processTitle: "Project Flow",
+          process1: "Inquiry",
+          process1Text: "Please let us know the application, installation environment, quantity, etc.",
+          process2: "Specification Sharing",
+          process2Text: "We will guide you on material specifications, sizes, and delivery estimates.",
+          process3: "Production",
+          process3Text: "Produced one by one at domestic workshops.",
+          process4: "Global Delivery",
+          process4Text: "Delivered from Japan to locations worldwide.",
+          contactEyebrow: "Contact",
+          contactTitle: "A Material That Speaks Quietly",
+          contactText: [
+            "FOMUS ARCHITECTURAL does not speak too much.",
+            "However, to those who touch it and inhabit the space, it conveys as a definite difference.",
+            "For project consultations and estimates, please feel free to contact us below."
+          ],
+          contactButton: "Request Information / Consultation"
+        },
+        fr: {
+          heroTitle: "FOMUS ARCHITECTURAL",
+          heroSub: "Curating the Essence of Japanese Craft",
+          conceptEyebrow: "Concept",
+          conceptTitle: "Qu'est-ce que FOMUS ARCHITECTURAL",
+          conceptText: [
+            "FOMUS ARCHITECTURAL est une ligne de produits qui reconstruit la culture matérielle japonaise en tant que 'philosophie architecturale'.",
+            "Nous n'imposons pas de designs finis. Ce que nous fournissons sont des 'matériaux essentiels' pour créer des espaces.",
+            "Comment les utiliser est décidé par le designer et l'espace. FOMUS devient le point de départ de cette création."
+          ],
+          materialEyebrow: "Matériau",
+          materialTitle: "Le Matériau\nPhilosophie des Matériaux",
+          materialText: [
+            "FOMUS ARCHITECTURAL utilise du cyprès hinoki soigneusement sélectionné cultivé au Japon.",
+            "Parmi le bois cultivé pour l'architecture, nous sélectionnons uniquement ceux d'excellente qualité, parfum et densité, les reconstruisant comme matériaux spatiaux.",
+            "La présence calme du hinoki, la chaleur transmise au toucher, l'expression qui s'approfondit avec le temps. Ceux-ci apportent une dignité naturelle aux espaces."
+          ],
+          philosophyEyebrow: "Philosophie",
+          philosophyTitle: "Philosophie du Matériau",
+          philosophyText: [
+            "FOMUS priorise de ne pas compromettre la beauté du matériau lui-même.",
+            "Grâce à un traitement de surface propriétaire, nous maintenons une stabilité adaptée à l'usage quotidien sans fermer la texture et la respiration que le bois possède naturellement.",
+            "Pour certains projets, le traitement traditionnel japonais à la feuille d'or est également possible."
+          ],
+          appEyebrow: "Applications",
+          appTitle: "Applications | Développement Spatial",
+          appIntro: ["FOMUS ARCHITECTURAL ne limite pas les applications.", "Aux plafonds, cloisons, piliers et mobilier. Il peut incarner une dignité silencieuse comme cœur d'un espace."],
+          appWall: "Mur",
+          appWallText: "Contrôlant doucement lumière et ombre, il arrange la dignité de l'espace comme surface qui capte le regard.",
+          appPartition: "Cloison",
+          appPartitionText: "Bloquant la vue tout en laissant passer l'air. Créant marge et profondeur tout en maintenant un sens d'ouverture.",
+          appColumn: "Colonne & Mobilier",
+          appColumnText: "Devenant une présence symbolique. Arrangeant le centre de gravité de l'espace et créant des contours mémorables.",
+          proEyebrow: "Pour Professionnels",
+          proTitle: "Pour Designers et Espaces",
+          proText: [
+            "FOMUS ARCHITECTURAL est un matériau pour designers, architectes et designers d'espace.",
+            "Son but est de maximiser la liberté créative sans limiter la philosophie de design.",
+            "Les spécifications et conditions de construction sont guidées individuellement pour les professionnels."
+          ],
+          processEyebrow: "Processus",
+          processTitle: "Flux de Projet",
+          process1: "Demande",
+          process1Text: "Veuillez nous informer de l'application, l'environnement d'installation, la quantité, etc.",
+          process2: "Partage des Spécifications",
+          process2Text: "Nous vous guiderons sur les spécifications des matériaux, tailles et estimations de livraison.",
+          process3: "Production",
+          process3Text: "Produit un par un dans les ateliers nationaux.",
+          process4: "Livraison Mondiale",
+          process4Text: "Livré du Japon vers des destinations mondiales.",
+          contactEyebrow: "Contact",
+          contactTitle: "Un Matériau Qui Parle Doucement",
+          contactText: [
+            "FOMUS ARCHITECTURAL ne parle pas trop.",
+            "Cependant, à ceux qui le touchent et habitent l'espace, il transmet comme une différence certaine.",
+            "Pour des consultations de projet et devis, n'hésitez pas à nous contacter ci-dessous."
+          ],
+          contactButton: "Demander Informations / Consultation"
+        },
+        ar: {
+          heroTitle: "FOMUS ARCHITECTURAL",
+          heroSub: "Curating the Essence of Japanese Craft",
+          conceptEyebrow: "المفهوم",
+          conceptTitle: "ما هو FOMUS ARCHITECTURAL",
+          conceptText: [
+            "FOMUS ARCHITECTURAL هو خط إنتاج يعيد بناء ثقافة المواد اليابانية كـ 'فلسفة معمارية'.",
+            "نحن لا نفرض تصاميم جاهزة. ما نقدمه هو 'مواد أساسية' لإنشاء المساحات.",
+            "كيفية استخدامها يقررها المصمم والمساحة. FOMUS تصبح نقطة البداية لذلك الإبداع."
+          ],
+          materialEyebrow: "المادة",
+          materialTitle: "المادة\nفلسفة المواد",
+          materialText: [
+            "FOMUS ARCHITECTURAL تستخدم خشب السرو الهينوكي المختار بعناية من اليابان.",
+            "من الخشب المُنمّى للعمارة، نختار فقط ذو الجودة والعطر والكثافة الممتازة، معيدين بناءها كمواد مكانية.",
+            "الحضور الهادئ للهينوكي، الدفء المنقول عند اللمس، التعبير الذي يتعمق مع الوقت. هذه تجلب كرامة طبيعية للمساحات."
+          ],
+          philosophyEyebrow: "الفلسفة",
+          philosophyTitle: "فلسفة المادة",
+          philosophyText: [
+            "FOMUS تُعطي الأولوية لعدم المساس بجمال المادة نفسها.",
+            "من خلال معالجة السطح الخاصة، نحافظ على استقرار مناسب للاستخدام اليومي دون إغلاق الملمس والتنفس الذي يمتلكه الخشب طبيعياً.",
+            "لبعض المشاريع، معالجة ورق الذهب اليابانية التقليدية ممكنة أيضاً."
+          ],
+          appEyebrow: "التطبيقات",
+          appTitle: "التطبيقات | التطوير المكاني",
+          appIntro: ["FOMUS ARCHITECTURAL لا تحد التطبيقات.", "للأسقف والفواصل والأعمدة والتجهيزات. يمكنها تجسيد كرامة هادئة كنواة للمساحة."],
+          appWall: "الجدار",
+          appWallText: "تتحكم بلطف في الضوء والظل، ترتب كرامة المساحة كسطح يلفت النظر.",
+          appPartition: "الفاصل",
+          appPartitionText: "تحجب الرؤية مع السماح للهواء بالمرور. تخلق هامشاً وعمقاً مع الحفاظ على إحساس بالانفتاح.",
+          appColumn: "العمود والأثاث",
+          appColumnText: "تصبح حضوراً رمزياً. ترتب مركز ثقل المساحة وتخلق معالم لا تُنسى.",
+          proEyebrow: "للمحترفين",
+          proTitle: "للمصممين والمساحات",
+          proText: [
+            "FOMUS ARCHITECTURAL مادة للمصممين والمعماريين ومصممي المساحات.",
+            "هدفها تعظيم الحرية الإبداعية دون تقييد فلسفة التصميم.",
+            "المواصفات وشروط البناء تُوجّه بشكل فردي للمحترفين."
+          ],
+          processEyebrow: "العملية",
+          processTitle: "سير المشروع",
+          process1: "الاستفسار",
+          process1Text: "يرجى إعلامنا بالتطبيق، بيئة التركيب، الكمية، إلخ.",
+          process2: "مشاركة المواصفات",
+          process2Text: "سنرشدك حول مواصفات المواد والأحجام وتقديرات التسليم.",
+          process3: "الإنتاج",
+          process3Text: "يُنتج واحداً تلو الآخر في الورش المحلية.",
+          process4: "التوصيل العالمي",
+          process4Text: "يُسلّم من اليابان إلى مواقع حول العالم.",
+          contactEyebrow: "اتصل",
+          contactTitle: "مادة تتحدث بهدوء",
+          contactText: [
+            "FOMUS ARCHITECTURAL لا تتحدث كثيراً.",
+            "ومع ذلك، لمن يلمسها ويسكن المساحة، تنقل كفرق مؤكد.",
+            "لاستشارات المشروع والتقديرات، لا تتردد في الاتصال بنا أدناه."
+          ],
+          contactButton: "طلب معلومات / استشارة"
+        }
+      };
+
+      let lang = "ja";
+      const langSelect = document.getElementById("lang-select");
+
+      const renderContent = () => {
+        const t = content[lang];
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+        langSelect.value = lang;
+
+        document.querySelector(".hero-title h1").textContent = t.heroTitle;
+        document.querySelector(".hero-title p").textContent = t.heroSub;
+
+        const sections = document.querySelectorAll(".section");
+
+        sections[0].querySelector(".section-eyebrow").textContent = t.conceptEyebrow;
+        sections[0].querySelector(".section-title").textContent = t.conceptTitle;
+        sections[0].querySelector(".section-text").innerHTML = t.conceptText.map(p => `<p>${p}</p>`).join("");
+
+        sections[1].querySelector(".section-eyebrow").textContent = t.materialEyebrow;
+        sections[1].querySelector(".section-title").innerHTML = t.materialTitle.replace(/\n/g, "<br>");
+        sections[1].querySelector(".section-text").innerHTML = t.materialText.map(p => `<p>${p}</p>`).join("");
+
+        sections[2].querySelector(".section-eyebrow").textContent = t.philosophyEyebrow;
+        sections[2].querySelector(".section-title").innerHTML = t.philosophyTitle.replace(/\n/g, "<br>");
+        sections[2].querySelector(".section-text").innerHTML = t.philosophyText.map(p => `<p>${p}</p>`).join("");
+
+        sections[3].querySelector(".section-eyebrow").textContent = t.appEyebrow;
+        sections[3].querySelector(".section-title").textContent = t.appTitle;
+        sections[3].querySelector(".section-text").innerHTML = t.appIntro.map(p => `<p>${p}</p>`).join("");
+        const slides = sections[3].querySelectorAll(".app-slide");
+        slides[0].querySelector(".app-card-title").textContent = t.appWall;
+        slides[0].querySelector(".app-card-text").textContent = t.appWallText;
+        slides[1].querySelector(".app-card-title").textContent = t.appPartition;
+        slides[1].querySelector(".app-card-text").textContent = t.appPartitionText;
+        slides[2].querySelector(".app-card-title").textContent = t.appColumn;
+        slides[2].querySelector(".app-card-text").textContent = t.appColumnText;
+
+        sections[4].querySelector(".section-eyebrow").textContent = t.proEyebrow;
+        sections[4].querySelector(".section-title").textContent = t.proTitle;
+        sections[4].querySelector(".section-text").innerHTML = t.proText.map(p => `<p>${p}</p>`).join("");
+
+        sections[5].querySelector(".section-eyebrow").textContent = t.processEyebrow;
+        sections[5].querySelector(".section-title").textContent = t.processTitle;
+        const processes = sections[5].querySelectorAll(".process-item");
+        processes[0].querySelector(".process-title").textContent = t.process1;
+        processes[0].querySelector(".process-text").textContent = t.process1Text;
+        processes[1].querySelector(".process-title").textContent = t.process2;
+        processes[1].querySelector(".process-text").textContent = t.process2Text;
+        processes[2].querySelector(".process-title").textContent = t.process3;
+        processes[2].querySelector(".process-text").textContent = t.process3Text;
+        processes[3].querySelector(".process-title").textContent = t.process4;
+        processes[3].querySelector(".process-text").textContent = t.process4Text;
+
+        sections[6].querySelector(".section-eyebrow").textContent = t.contactEyebrow;
+        sections[6].querySelector(".section-title").textContent = t.contactTitle;
+        sections[6].querySelector(".section-text").innerHTML = t.contactText.map(p => `<p>${p}</p>`).join("");
+        sections[6].querySelector(".cta").textContent = t.contactButton;
+
+        if (window.lucide) window.lucide.createIcons();
+      };
+
+      langSelect.addEventListener("change", (e) => {
+        lang = e.target.value;
+        renderContent();
+      });
+
+      renderContent();
+    </script>
+  </body>
+</html>

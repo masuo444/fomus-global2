@@ -1,0 +1,19 @@
+# robots.txt for FOMUS Global Website
+# https://fomusglobal.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://fomusglobal.com/sitemap.xml
+
+# Disallow admin/private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all crawlers to access images
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /

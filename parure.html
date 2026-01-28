@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FOMUS PARURE - 枡の造形から生まれたアートジュエリー | FOMUS</title>
+    <meta name="description" content="FOMUS PARUREは1300年以上続く枡のかたちから生まれたラグジュアリーアートジュエリー。国産ヒノキを使用し、一点ずつ手作業で仕上げる完全受注制作。身につける・飾る・贈る3つの在り方。" />
+
+    <!-- OGP Tags -->
+    <meta property="og:title" content="FOMUS PARURE - 枡の造形から生まれたアートジュエリー" />
+    <meta property="og:description" content="枡という文化を纏う。1300年以上続く枡のかたちから生まれたラグジュアリーアートジュエリー。" />
+    <meta property="og:image" content="https://fomusglobal.com/images/parure-og.jpg" />
+    <meta property="og:url" content="https://fomusglobal.com/parure.html" />
+    <meta property="og:type" content="product" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FOMUS PARURE - 枡の造形から生まれたアートジュエリー" />
+    <meta name="twitter:description" content="枡という文化を纏う。1300年以上続く枡のかたちから生まれたラグジュアリーアートジュエリー。" />
+    <meta name="twitter:image" content="https://fomusglobal.com/images/parure-og.jpg" />
+
+    <link rel="canonical" href="https://fomusglobal.com/parure.html" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta name="theme-color" content="#1a1a1a" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --smoke: #575757;
+        --stone: #f2efe8;
+        --mist: #fbfaf7;
+        --gold: #c4a667;
+        --line: rgba(26, 26, 26, 0.12);
+        --shadow: 0 30px 60px rgba(0,0,0,0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Noto Sans JP", "Montserrat", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 20% 10%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 55%),
+          radial-gradient(circle at 80% 0%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 50%),
+          linear-gradient(180deg, #fdfbf7 0%, #f0ece5 100%);
+        line-height: 2.1;
+        letter-spacing: 0.04em;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .font-serif { font-family: "Noto Serif JP", serif; }
+      .font-cinzel { font-family: "Cinzel", serif; }
+      .font-montserrat { font-family: "Montserrat", sans-serif; }
+
+      .topbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        padding: 26px 0;
+        transition: 0.4s ease;
+        color: #fff;
+        mix-blend-mode: screen;
+      }
+      .topbar.scrolled {
+        background: rgba(253, 251, 247, 0.94);
+        color: var(--ink);
+        mix-blend-mode: normal;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+        padding: 16px 0;
+      }
+      .topbar-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .brand {
+        font-size: 16px;
+        letter-spacing: 0.32em;
+      }
+
+      .lang-selector {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border: 1px solid currentColor;
+        padding: 4px 10px;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+      }
+      .lang-selector select {
+        background: transparent;
+        border: none;
+        color: inherit;
+        font-family: inherit;
+        font-size: 11px;
+        cursor: pointer;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      .lang-selector select option {
+        background: var(--mist);
+        color: var(--ink);
+      }
+
+      /* Accessibility - Focus Styles */
+      a:focus, button:focus, select:focus {
+        outline: 2px solid var(--gold);
+        outline-offset: 2px;
+      }
+
+      /* RTL Support */
+      [dir="rtl"] { text-align: right; }
+      [dir="rtl"] .topbar-inner { flex-direction: row-reverse; }
+      [dir="rtl"] .section { direction: rtl; }
+      [dir="rtl"] .forms-grid { direction: rtl; }
+
+      /* ===== PARURE HERO (Luxury) ===== */
+      .hero-parure{
+        padding: 120px 40px 0;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .hero-parure .hero-media{
+        max-width: none;
+      }
+
+      .hero-parure .hero-frame{
+        background: transparent;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+      }
+      .hero-parure .hero-frame::after{
+        display: none;
+      }
+      .hero-parure .hero-frame img{
+        height: 62vh;
+        min-height: 420px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .parure-lead{
+        max-width: 760px;
+        margin: 70px auto 10px;
+        text-align: center;
+        display: grid;
+        gap: 14px;
+      }
+      .parure-lead .hero-kicker{
+        font-size: 10px;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+      .parure-lead .hero-headline{
+        font-size: clamp(2rem, 3.4vw, 2.8rem);
+        letter-spacing: 0.08em;
+        font-weight: 500;
+        line-height: 1.35;
+      }
+      .parure-lead .hero-tagline{
+        font-size: 12.5px;
+        letter-spacing: 0.06em;
+        color: #666;
+        line-height: 2.0;
+      }
+      .parure-lead .hero-en{
+        font-size: 10px;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: rgba(26,26,26,0.45);
+      }
+
+      .page {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 90px 40px 160px;
+      }
+
+      .section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 100px 0;
+        border-bottom: 1px solid var(--line);
+        opacity: 0;
+        transform: translateY(20px);
+        animation: reveal 1.1s ease forwards;
+      }
+      .section:nth-of-type(1) { animation-delay: 0.15s; }
+      .section:nth-of-type(2) { animation-delay: 0.25s; }
+      .section:nth-of-type(3) { animation-delay: 0.35s; }
+      .section:nth-of-type(4) { animation-delay: 0.45s; }
+      .section:nth-of-type(5) { animation-delay: 0.55s; }
+      .section:nth-of-type(6) { animation-delay: 0.65s; }
+      .section:nth-of-type(7) { animation-delay: 0.75s; }
+      .section:nth-of-type(8) { animation-delay: 0.85s; }
+      .section:last-of-type { border-bottom: none; }
+      .section.no-media { grid-template-columns: 1fr; }
+
+      @keyframes reveal {
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .section-head {
+        display: grid;
+        gap: 18px;
+      }
+      .section-eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+      .section-title {
+        font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+        letter-spacing: 0.08em;
+      }
+      .section-text {
+        color: var(--smoke);
+        font-size: 13px;
+      }
+      .section-text p + p { margin-top: 16px; }
+
+      .media-frame {
+        position: relative;
+        border-radius: 2px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+      .media-frame::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border: 1px solid rgba(255,255,255,0.3);
+        pointer-events: none;
+      }
+
+      .statement {
+        background: var(--mist);
+        padding: 60px;
+        border: 1px solid var(--line);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+      }
+
+      .forms-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .form-card {
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 24px 26px;
+      }
+      .form-card-title {
+        font-size: 12px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 12px;
+      }
+
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 12px 26px;
+        border: 1px solid var(--ink);
+        font-size: 11px;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        background: transparent;
+        transition: 0.3s ease;
+      }
+      .cta:hover {
+        background: var(--ink);
+        color: #fff;
+      }
+
+      .footer {
+        border-top: 1px solid var(--line);
+        padding: 40px 0 20px;
+        font-size: 11px;
+        color: var(--smoke);
+        text-align: center;
+      }
+
+      @media (min-width: 900px) {
+        .hero-parure{
+          padding: 160px 40px 0;
+        }
+        .hero-parure .hero-frame img{
+          height: 70vh;
+          min-height: 520px;
+        }
+        .section {
+          grid-template-columns: 1.1fr 0.9fr;
+          align-items: center;
+          gap: 70px;
+        }
+        .section.reverse {
+          grid-template-columns: 0.9fr 1.1fr;
+        }
+        .section.reverse .section-head { order: 2; }
+        .section.reverse .media-frame { order: 1; }
+        .section.no-media { grid-template-columns: 1fr; }
+        .forms-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar" id="topbar" role="banner">
+      <div class="topbar-inner">
+        <a class="brand font-cinzel" href="index.html" aria-label="FOmusトップページへ">FOMUS</a>
+        <div class="lang-selector">
+          <i data-lucide="globe" style="width:12px;"></i>
+          <select id="lang-select">
+            <option value="ja">JP</option>
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+            <option value="ar">عربي</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-parure">
+      <div class="hero-media">
+        <div class="media-frame hero-frame">
+          <img
+            src="%E7%94%BB%E5%83%8F/PARURE/%E3%83%92%E3%83%BC%E3%83%AD%E3%83%BC%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8.JPG"
+            alt="枡の造形から生まれたFOMUS PARUREジュエリー"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <main class="page">
+      <section class="section no-media">
+        <div class="parure-lead">
+          <div class="hero-kicker font-montserrat">FOMUS PARURE</div>
+          <h1 class="hero-headline font-serif">枡という文化を纏う</h1>
+          <p class="hero-tagline font-serif">
+            1300年以上続く「枡」のかたちから生まれたアートジュエリー
+          </p>
+          <p class="hero-en font-montserrat">
+            A Luxury Art Jewelry Rooted in Japanese Culture
+          </p>
+        </div>
+      </section>
+
+      <section class="section no-media">
+        <div class="statement">
+          <div class="section-head">
+            <span class="section-eyebrow font-montserrat">INTRODUCTION｜はじめに</span>
+            <div class="section-text font-serif">
+              <p>FOMUS PARUREは、日本で1300年以上使われ続けてきた「枡」という造形を起点に生まれたラグジュアリーアートジュエリーです。</p>
+              <p>身につけることも、空間に置くこともできます。</p>
+              <p>装飾として主張するのではなく、人や空間の佇まいを、静かに整える存在であること。それが、FOMUS PARUREの在り方です。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="section-eyebrow font-montserrat">CONCEPT｜コンセプト</span>
+          <h2 class="section-title font-serif">枡というかたちに宿る、日本の考え方</h2>
+          <div class="section-text font-serif">
+            <p>枡は、量るための道具であり、祝いの場を支える器でもありました。</p>
+            <p>正方形という単純な形の中に、均衡、余白、安定といった日本独自の価値観が込められています。</p>
+            <p>FOMUS PARUREは、その造形を忠実に再現するのではなく、現代の暮らしの中で美しく成立するかたちとして再構築しています。</p>
+          </div>
+        </div>
+        <div class="media-frame">
+          <img src="%E7%94%BB%E5%83%8F/PARURE/%E6%A3%AE%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3.JPG" alt="Masu form">
+        </div>
+      </section>
+
+      <section class="section reverse">
+        <div class="section-head">
+          <span class="section-eyebrow font-montserrat">MATERIAL｜素材について</span>
+          <h2 class="section-title font-serif">国産ヒノキという選択</h2>
+          <div class="section-text font-serif">
+            <p>FOMUS PARUREには、神社仏閣の建築にも用いられてきた国産ヒノキを使用しています。</p>
+            <p>軽さ、手触り、香り。そして、時間とともに深まる色味。</p>
+            <p>使い続けることで、素材は少しずつ変化し、持ち主との時間を刻んでいきます。</p>
+          </div>
+        </div>
+        <div class="media-frame">
+          <img src="%E7%94%BB%E5%83%8F/PARURE/%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88%EF%BC%92.JPG" alt="Material detail">
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="section-eyebrow font-montserrat">CRAFT｜制作について</span>
+          <h2 class="section-title font-serif">一点ずつ、静かに仕立てる</h2>
+          <div class="section-text font-serif">
+            <p>FOMUS PARUREは、量産を前提としていません。</p>
+            <p>木目やバランスを見極めながら、国内の工房で一点ずつ手作業で仕上げています。</p>
+            <p>同じかたちであっても、同じ表情のものは存在しません。</p>
+            <p>すべてが、一つとして同じもののない作品です。</p>
+          </div>
+        </div>
+        <div class="media-frame">
+          <img src="%E7%94%BB%E5%83%8F/PARURE/%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88%EF%BC%91.JPG" alt="Craft process">
+        </div>
+      </section>
+
+      <section class="section no-media">
+        <div class="section-head">
+          <span class="section-eyebrow font-montserrat">THREE FORMS｜3つの在り方</span>
+          <div class="section-text font-serif">
+            <p>FOMUS PARUREは、使い方を決めていません。</p>
+            <p>持ち主の感覚によって、次の3つの在り方を持ちます。</p>
+          </div>
+        </div>
+        <div class="forms-grid font-serif">
+          <div class="form-card">
+            <div class="form-card-title">WEAR｜身につける</div>
+            <div class="section-text">
+              <p>身につけたとき、FOMUS PARUREは装いの中心にはなりません。</p>
+              <p>しかし、全体の印象を引き締め、静かな重心として機能します。</p>
+              <p>日常の装いにも、特別な場にも、自然に溶け込みます。</p>
+            </div>
+          </div>
+          <div class="form-card">
+            <div class="form-card-title">DISPLAY｜飾る</div>
+            <div class="section-text">
+              <p>棚やテーブルに置かれたとき、FOMUS PARUREは空間の中にひとつの「間」を生み出します。</p>
+              <p>主張するオブジェではなく、空間のバランスを整える存在です。</p>
+            </div>
+          </div>
+          <div class="form-card">
+            <div class="form-card-title">GIFT｜贈る</div>
+            <div class="section-text">
+              <p>記念日や人生の節目に。FOMUS PARUREは、言葉の代わりに想いを託すことができます。</p>
+              <p>消費されるものではなく、時間とともに価値を深めていく贈り物です。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section no-media">
+        <div class="section-head">
+          <span class="section-eyebrow font-montserrat">ORDER</span>
+          <div class="section-text font-serif">
+            <p>完全受注制作</p>
+            <p>一点ずつ手作業による制作</p>
+            <p>制作期間：約1〜2ヶ月</p>
+            <p>国内外配送対応</p>
+            <p>FOMUS PARUREは、「購入するもの」ではなく、迎え入れ、共に時間を重ねるものだと考えています。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section no-media">
+        <div class="section-head">
+          <span class="section-eyebrow font-montserrat">CONTACT｜お問い合わせ</span>
+          <div class="section-text font-serif">
+            <p>FOMUS PARUREについてのご相談、オーダーのご希望は、下記よりお問い合わせください。</p>
+            <p>作品について、使い方について、どんな内容でも構いません。</p>
+          </div>
+          <a class="cta font-montserrat" href="index.html#contact">Request Information / Consultation</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="font-cinzel" style="letter-spacing: 0.2em; margin-bottom: 8px;">FOMUS</div>
+      <div>&copy; FOMUS. All rights reserved.</div>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        document.getElementById("topbar").classList.toggle("scrolled", window.scrollY > 60);
+      });
+
+      const content = {
+        ja: {
+          kicker: "FOMUS PARURE",
+          headline: "枡という文化を纏う",
+          tagline: "1300年以上続く「枡」のかたちから生まれたアートジュエリー",
+          enTagline: "A Luxury Art Jewelry Rooted in Japanese Culture",
+          introEyebrow: "INTRODUCTION｜はじめに",
+          introText: [
+            "FOMUS PARUREは、日本で1300年以上使われ続けてきた「枡」という造形を起点に生まれたラグジュアリーアートジュエリーです。",
+            "身につけることも、空間に置くこともできます。",
+            "装飾として主張するのではなく、人や空間の佇まいを、静かに整える存在であること。それが、FOMUS PARUREの在り方です。"
+          ],
+          conceptEyebrow: "CONCEPT｜コンセプト",
+          conceptTitle: "枡というかたちに宿る、日本の考え方",
+          conceptText: [
+            "枡は、量るための道具であり、祝いの場を支える器でもありました。",
+            "正方形という単純な形の中に、均衡、余白、安定といった日本独自の価値観が込められています。",
+            "FOMUS PARUREは、その造形を忠実に再現するのではなく、現代の暮らしの中で美しく成立するかたちとして再構築しています。"
+          ],
+          materialEyebrow: "MATERIAL｜素材について",
+          materialTitle: "国産ヒノキという選択",
+          materialText: [
+            "FOMUS PARUREには、神社仏閣の建築にも用いられてきた国産ヒノキを使用しています。",
+            "軽さ、手触り、香り。そして、時間とともに深まる色味。",
+            "使い続けることで、素材は少しずつ変化し、持ち主との時間を刻んでいきます。"
+          ],
+          craftEyebrow: "CRAFT｜制作について",
+          craftTitle: "一点ずつ、静かに仕立てる",
+          craftText: [
+            "FOMUS PARUREは、量産を前提としていません。",
+            "木目やバランスを見極めながら、国内の工房で一点ずつ手作業で仕上げています。",
+            "同じかたちであっても、同じ表情のものは存在しません。",
+            "すべてが、一つとして同じもののない作品です。"
+          ],
+          formsEyebrow: "THREE FORMS｜3つの在り方",
+          formsIntro: ["FOMUS PARUREは、使い方を決めていません。", "持ち主の感覚によって、次の3つの在り方を持ちます。"],
+          formWearTitle: "WEAR｜身につける",
+          formWearText: ["身につけたとき、FOMUS PARUREは装いの中心にはなりません。", "しかし、全体の印象を引き締め、静かな重心として機能します。", "日常の装いにも、特別な場にも、自然に溶け込みます。"],
+          formDisplayTitle: "DISPLAY｜飾る",
+          formDisplayText: ["棚やテーブルに置かれたとき、FOMUS PARUREは空間の中にひとつの「間」を生み出します。", "主張するオブジェではなく、空間のバランスを整える存在です。"],
+          formGiftTitle: "GIFT｜贈る",
+          formGiftText: ["記念日や人生の節目に。FOMUS PARUREは、言葉の代わりに想いを託すことができます。", "消費されるものではなく、時間とともに価値を深めていく贈り物です。"],
+          orderEyebrow: "ORDER",
+          orderText: ["完全受注制作", "一点ずつ手作業による制作", "制作期間：約1〜2ヶ月", "国内外配送対応", "FOMUS PARUREは、「購入するもの」ではなく、迎え入れ、共に時間を重ねるものだと考えています。"],
+          contactEyebrow: "CONTACT｜お問い合わせ",
+          contactText: ["FOMUS PARUREについてのご相談、オーダーのご希望は、下記よりお問い合わせください。", "作品について、使い方について、どんな内容でも構いません。"],
+          contactButton: "Request Information / Consultation"
+        },
+        en: {
+          kicker: "FOMUS PARURE",
+          headline: "Wearing the Culture of Masu",
+          tagline: "Art jewelry born from the form of 'masu' that has continued for over 1300 years",
+          enTagline: "A Luxury Art Jewelry Rooted in Japanese Culture",
+          introEyebrow: "INTRODUCTION",
+          introText: [
+            "FOMUS PARURE is a luxury art jewelry born from the form of 'masu', which has been used in Japan for over 1300 years.",
+            "It can be worn or placed in a space.",
+            "Rather than asserting itself as decoration, it exists to quietly arrange the presence of people and spaces. This is the way of FOMUS PARURE."
+          ],
+          conceptEyebrow: "CONCEPT",
+          conceptTitle: "Japanese Philosophy in the Form of Masu",
+          conceptText: [
+            "Masu was a measuring tool and also a vessel that supported celebratory occasions.",
+            "Within its simple square shape, uniquely Japanese values such as balance, margin, and stability are embedded.",
+            "FOMUS PARURE does not faithfully reproduce that form, but reconstructs it as a form that beautifully exists in modern life."
+          ],
+          materialEyebrow: "MATERIAL",
+          materialTitle: "The Choice of Domestic Hinoki Cypress",
+          materialText: [
+            "FOMUS PARURE uses domestic hinoki cypress that has been used in shrine and temple architecture.",
+            "Lightness, texture, fragrance. And colors that deepen over time.",
+            "Through continued use, the material gradually changes and marks time with its owner."
+          ],
+          craftEyebrow: "CRAFT",
+          craftTitle: "Quietly Crafted, One by One",
+          craftText: [
+            "FOMUS PARURE is not intended for mass production.",
+            "Each piece is finished by hand in domestic workshops while discerning wood grain and balance.",
+            "Even with the same shape, no two have the same expression.",
+            "Every piece is a unique work."
+          ],
+          formsEyebrow: "THREE FORMS",
+          formsIntro: ["FOMUS PARURE does not dictate how to use it.", "Depending on the owner's sense, it has three ways of being."],
+          formWearTitle: "WEAR",
+          formWearText: ["When worn, FOMUS PARURE does not become the center of attire.", "However, it tightens the overall impression and functions as a quiet center of gravity.", "It naturally blends into both daily attire and special occasions."],
+          formDisplayTitle: "DISPLAY",
+          formDisplayText: ["When placed on a shelf or table, FOMUS PARURE creates a 'ma' (space) within the room.", "Not an assertive object, but an existence that arranges the balance of space."],
+          formGiftTitle: "GIFT",
+          formGiftText: ["For anniversaries and life milestones. FOMUS PARURE can carry thoughts instead of words.", "Not something to be consumed, but a gift that deepens in value over time."],
+          orderEyebrow: "ORDER",
+          orderText: ["Made to order", "Handcrafted one by one", "Production period: approximately 1-2 months", "Domestic and international shipping available", "FOMUS PARURE is not something to 'purchase', but to welcome and accumulate time together."],
+          contactEyebrow: "CONTACT",
+          contactText: ["For consultations about FOMUS PARURE or order requests, please contact us below.", "Any questions about the work or how to use it are welcome."],
+          contactButton: "Request Information / Consultation"
+        },
+        fr: {
+          kicker: "FOMUS PARURE",
+          headline: "Porter la Culture du Masu",
+          tagline: "Bijou d'art né de la forme du 'masu' qui perdure depuis plus de 1300 ans",
+          enTagline: "Un Bijou d'Art de Luxe Enraciné dans la Culture Japonaise",
+          introEyebrow: "INTRODUCTION",
+          introText: [
+            "FOMUS PARURE est un bijou d'art de luxe né de la forme du 'masu', utilisé au Japon depuis plus de 1300 ans.",
+            "Il peut être porté ou placé dans un espace.",
+            "Plutôt que de s'affirmer comme décoration, il existe pour arranger tranquillement la présence des personnes et des espaces. C'est la manière d'être de FOMUS PARURE."
+          ],
+          conceptEyebrow: "CONCEPT",
+          conceptTitle: "La Philosophie Japonaise dans la Forme du Masu",
+          conceptText: [
+            "Le masu était un outil de mesure et aussi un récipient qui soutenait les occasions de célébration.",
+            "Dans sa forme carrée simple, des valeurs typiquement japonaises comme l'équilibre, la marge et la stabilité sont intégrées.",
+            "FOMUS PARURE ne reproduit pas fidèlement cette forme, mais la reconstruit comme une forme qui existe magnifiquement dans la vie moderne."
+          ],
+          materialEyebrow: "MATÉRIAU",
+          materialTitle: "Le Choix du Cyprès Hinoki Domestique",
+          materialText: [
+            "FOMUS PARURE utilise du cyprès hinoki domestique utilisé dans l'architecture des sanctuaires et temples.",
+            "Légèreté, texture, parfum. Et des couleurs qui s'approfondissent avec le temps.",
+            "Par une utilisation continue, le matériau change progressivement et marque le temps avec son propriétaire."
+          ],
+          craftEyebrow: "ARTISANAT",
+          craftTitle: "Confectionné Tranquillement, Un par Un",
+          craftText: [
+            "FOMUS PARURE n'est pas destiné à la production de masse.",
+            "Chaque pièce est finie à la main dans des ateliers nationaux tout en discernant le grain du bois et l'équilibre.",
+            "Même avec la même forme, aucune n'a la même expression.",
+            "Chaque pièce est une œuvre unique."
+          ],
+          formsEyebrow: "TROIS FORMES",
+          formsIntro: ["FOMUS PARURE ne dicte pas comment l'utiliser.", "Selon le sens du propriétaire, il a trois façons d'être."],
+          formWearTitle: "PORTER",
+          formWearText: ["Lorsqu'il est porté, FOMUS PARURE ne devient pas le centre de la tenue.", "Cependant, il resserre l'impression générale et fonctionne comme un centre de gravité silencieux.", "Il se fond naturellement dans la tenue quotidienne et les occasions spéciales."],
+          formDisplayTitle: "EXPOSER",
+          formDisplayText: ["Placé sur une étagère ou une table, FOMUS PARURE crée un 'ma' (espace) dans la pièce.", "Pas un objet assertif, mais une existence qui arrange l'équilibre de l'espace."],
+          formGiftTitle: "OFFRIR",
+          formGiftText: ["Pour les anniversaires et les étapes de la vie. FOMUS PARURE peut porter des pensées à la place des mots.", "Pas quelque chose à consommer, mais un cadeau qui approfondit sa valeur avec le temps."],
+          orderEyebrow: "COMMANDE",
+          orderText: ["Fait sur commande", "Fabriqué à la main un par un", "Période de production : environ 1-2 mois", "Livraison nationale et internationale disponible", "FOMUS PARURE n'est pas quelque chose à 'acheter', mais à accueillir et à accumuler du temps ensemble."],
+          contactEyebrow: "CONTACT",
+          contactText: ["Pour des consultations sur FOMUS PARURE ou des demandes de commande, veuillez nous contacter ci-dessous.", "Toute question sur l'œuvre ou son utilisation est la bienvenue."],
+          contactButton: "Demander des Informations / Consultation"
+        },
+        ar: {
+          kicker: "FOMUS PARURE",
+          headline: "ارتداء ثقافة الماسو",
+          tagline: "مجوهرات فنية ولدت من شكل 'الماسو' الذي استمر لأكثر من 1300 عام",
+          enTagline: "مجوهرات فنية فاخرة متجذرة في الثقافة اليابانية",
+          introEyebrow: "مقدمة",
+          introText: [
+            "FOMUS PARURE هي مجوهرات فنية فاخرة ولدت من شكل 'الماسو'، الذي استُخدم في اليابان لأكثر من 1300 عام.",
+            "يمكن ارتداؤها أو وضعها في مساحة.",
+            "بدلاً من فرض نفسها كزينة، توجد لترتيب حضور الأشخاص والمساحات بهدوء. هذه هي طريقة FOMUS PARURE."
+          ],
+          conceptEyebrow: "المفهوم",
+          conceptTitle: "الفلسفة اليابانية في شكل الماسو",
+          conceptText: [
+            "كان الماسو أداة قياس وأيضاً وعاء يدعم مناسبات الاحتفال.",
+            "ضمن شكله المربع البسيط، تُدمج قيم يابانية فريدة مثل التوازن والهامش والاستقرار.",
+            "FOMUS PARURE لا تعيد إنتاج هذا الشكل بدقة، بل تعيد بناءه كشكل يوجد بجمال في الحياة الحديثة."
+          ],
+          materialEyebrow: "المادة",
+          materialTitle: "اختيار خشب السرو الهينوكي المحلي",
+          materialText: [
+            "تستخدم FOMUS PARURE خشب السرو الهينوكي المحلي المستخدم في عمارة المعابد.",
+            "الخفة، الملمس، العطر. وألوان تتعمق مع الوقت.",
+            "من خلال الاستخدام المستمر، تتغير المادة تدريجياً وتسجل الوقت مع مالكها."
+          ],
+          craftEyebrow: "الحرفة",
+          craftTitle: "مصنوعة بهدوء، واحدة تلو الأخرى",
+          craftText: [
+            "FOMUS PARURE ليست مخصصة للإنتاج الضخم.",
+            "يتم إنهاء كل قطعة يدوياً في ورش محلية مع تمييز حبيبات الخشب والتوازن.",
+            "حتى مع نفس الشكل، لا اثنتان لهما نفس التعبير.",
+            "كل قطعة عمل فريد."
+          ],
+          formsEyebrow: "ثلاثة أشكال",
+          formsIntro: ["FOMUS PARURE لا تُملي كيفية استخدامها.", "حسب حس المالك، لها ثلاث طرق للوجود."],
+          formWearTitle: "الارتداء",
+          formWearText: ["عند ارتدائها، لا تصبح FOMUS PARURE مركز الزي.", "ومع ذلك، تشد الانطباع العام وتعمل كمركز ثقل هادئ.", "تندمج طبيعياً في الزي اليومي والمناسبات الخاصة."],
+          formDisplayTitle: "العرض",
+          formDisplayText: ["عند وضعها على رف أو طاولة، تخلق FOMUS PARURE 'ما' (مساحة) في الغرفة.", "ليست كائناً حازماً، بل وجود يرتب توازن المساحة."],
+          formGiftTitle: "الإهداء",
+          formGiftText: ["للذكرى السنوية ومعالم الحياة. يمكن لـ FOMUS PARURE حمل الأفكار بدلاً من الكلمات.", "ليست شيئاً للاستهلاك، بل هدية تتعمق قيمتها مع الوقت."],
+          orderEyebrow: "الطلب",
+          orderText: ["مصنوع حسب الطلب", "مصنوع يدوياً واحدة تلو الأخرى", "فترة الإنتاج: حوالي 1-2 شهر", "الشحن المحلي والدولي متاح", "FOMUS PARURE ليست شيئاً 'للشراء'، بل للترحيب وتراكم الوقت معاً."],
+          contactEyebrow: "اتصل",
+          contactText: ["للاستشارات حول FOMUS PARURE أو طلبات الطلب، يرجى الاتصال بنا أدناه.", "أي أسئلة حول العمل أو كيفية استخدامه مرحب بها."],
+          contactButton: "طلب معلومات / استشارة"
+        }
+      };
+
+      let lang = "ja";
+      const langSelect = document.getElementById("lang-select");
+
+      const renderContent = () => {
+        const t = content[lang];
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+        langSelect.value = lang;
+
+        document.querySelector(".hero-kicker").textContent = t.kicker;
+        document.querySelector(".hero-headline").textContent = t.headline;
+        document.querySelector(".hero-tagline").textContent = t.tagline;
+        document.querySelector(".hero-en").textContent = t.enTagline;
+
+        const sections = document.querySelectorAll(".section");
+
+        // Intro section (index 1)
+        sections[1].querySelector(".section-eyebrow").textContent = t.introEyebrow;
+        sections[1].querySelector(".section-text").innerHTML = t.introText.map(p => `<p>${p}</p>`).join("");
+
+        // Concept section (index 2)
+        sections[2].querySelector(".section-eyebrow").textContent = t.conceptEyebrow;
+        sections[2].querySelector(".section-title").textContent = t.conceptTitle;
+        sections[2].querySelector(".section-text").innerHTML = t.conceptText.map(p => `<p>${p}</p>`).join("");
+
+        // Material section (index 3)
+        sections[3].querySelector(".section-eyebrow").textContent = t.materialEyebrow;
+        sections[3].querySelector(".section-title").textContent = t.materialTitle;
+        sections[3].querySelector(".section-text").innerHTML = t.materialText.map(p => `<p>${p}</p>`).join("");
+
+        // Craft section (index 4)
+        sections[4].querySelector(".section-eyebrow").textContent = t.craftEyebrow;
+        sections[4].querySelector(".section-title").textContent = t.craftTitle;
+        sections[4].querySelector(".section-text").innerHTML = t.craftText.map(p => `<p>${p}</p>`).join("");
+
+        // Forms section (index 5)
+        sections[5].querySelector(".section-eyebrow").textContent = t.formsEyebrow;
+        sections[5].querySelector(".section-text").innerHTML = t.formsIntro.map(p => `<p>${p}</p>`).join("");
+        const formCards = sections[5].querySelectorAll(".form-card");
+        formCards[0].querySelector(".form-card-title").textContent = t.formWearTitle;
+        formCards[0].querySelector(".section-text").innerHTML = t.formWearText.map(p => `<p>${p}</p>`).join("");
+        formCards[1].querySelector(".form-card-title").textContent = t.formDisplayTitle;
+        formCards[1].querySelector(".section-text").innerHTML = t.formDisplayText.map(p => `<p>${p}</p>`).join("");
+        formCards[2].querySelector(".form-card-title").textContent = t.formGiftTitle;
+        formCards[2].querySelector(".section-text").innerHTML = t.formGiftText.map(p => `<p>${p}</p>`).join("");
+
+        // Order section (index 6)
+        sections[6].querySelector(".section-eyebrow").textContent = t.orderEyebrow;
+        sections[6].querySelector(".section-text").innerHTML = t.orderText.map(p => `<p>${p}</p>`).join("");
+
+        // Contact section (index 7)
+        sections[7].querySelector(".section-eyebrow").textContent = t.contactEyebrow;
+        sections[7].querySelector(".section-text").innerHTML = t.contactText.map(p => `<p>${p}</p>`).join("");
+        sections[7].querySelector(".cta").textContent = t.contactButton;
+
+        if (window.lucide) window.lucide.createIcons();
+      };
+
+      langSelect.addEventListener("change", (e) => {
+        lang = e.target.value;
+        renderContent();
+      });
+
+      renderContent();
+    </script>
+  </body>
+</html>

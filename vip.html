@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VIP Membership - 招待制プライベートプログラム | FOMUS</title>
+    <meta name="description" content="FOMUS VIP Membershipは招待制・審査制の特別プログラム。予約不可の老舗料亭、伝統工芸士の工房でのプライベート体験、グローバルネットワーク。年会費$10,000〜" />
+
+    <!-- OGP Tags -->
+    <meta property="og:title" content="VIP Membership - 招待制プライベートプログラム | FOMUS" />
+    <meta property="og:description" content="一般には決して公開されない日本文化の現場へ、FOMUSがご案内。招待制・審査制の特別プログラム。" />
+    <meta property="og:image" content="https://fomusglobal.com/images/vip-og.jpg" />
+    <meta property="og:url" content="https://fomusglobal.com/vip.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VIP Membership - 招待制プライベートプログラム | FOMUS" />
+    <meta name="twitter:description" content="一般には決して公開されない日本文化の現場へ、FOMUSがご案内。" />
+    <meta name="twitter:image" content="https://fomusglobal.com/images/vip-og.jpg" />
+
+    <link rel="canonical" href="https://fomusglobal.com/vip.html" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta name="theme-color" content="#1a1a1a" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <style>
+      :root {
+        --gold: #bfa46f;
+        --ink: #1a1a1a;
+        --paper: #fbfaf5;
+        --line: rgba(26, 26, 26, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Noto Sans JP", "Montserrat", sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+        line-height: 2.0;
+        letter-spacing: 0.05em;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .font-cinzel { font-family: "Cinzel", serif; }
+      .font-serif-jp { font-family: "Noto Serif JP", serif; }
+
+      .container {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .page {
+        padding: 120px 0 160px;
+      }
+
+      .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+        background: rgba(251, 250, 245, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 30px rgba(0,0,0,0.03);
+        transition: all 0.3s ease;
+      }
+      .brand-link {
+        font-size: 13px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+      }
+
+      .lang-selector {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border: 1px solid var(--ink);
+        padding: 4px 10px;
+        font-size: 11px;
+      }
+      .lang-selector select {
+        background: transparent;
+        border: none;
+        color: inherit;
+        font-family: inherit;
+        font-size: 11px;
+        cursor: pointer;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      .lang-selector select option {
+        background: var(--paper);
+        color: var(--ink);
+      }
+
+      /* Accessibility - Focus Styles */
+      a:focus, button:focus, select:focus {
+        outline: 2px solid var(--gold);
+        outline-offset: 2px;
+      }
+
+      /* RTL Support */
+      [dir="rtl"] { text-align: right; }
+      [dir="rtl"] .site-header { flex-direction: row-reverse; }
+      [dir="rtl"] .hero { direction: rtl; }
+      [dir="rtl"] .info-grid { direction: rtl; }
+      [dir="rtl"] .list { padding-right: 0; }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 48px;
+        align-items: center;
+        margin-bottom: 80px;
+      }
+
+      .hero-title {
+        font-size: clamp(2.4rem, 5vw, 3.6rem);
+        letter-spacing: 0.12em;
+        margin-bottom: 16px;
+      }
+
+      .hero-sub {
+        font-size: 14px;
+        color: #666;
+      }
+
+      .hero-image {
+        border: 1px solid var(--line);
+        background: #ffffff;
+        padding: 18px;
+      }
+
+      .section {
+        margin-top: 80px;
+      }
+
+      .section-title {
+        font-size: 20px;
+        letter-spacing: 0.12em;
+        margin-bottom: 18px;
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .info-card {
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 28px;
+      }
+
+      .list {
+        list-style: none;
+        margin-top: 12px;
+      }
+
+      .list li {
+        padding: 14px 0;
+        border-top: 1px solid var(--line);
+        font-size: 13px;
+      }
+
+      .list li:first-child {
+        border-top: none;
+      }
+
+      .price {
+        font-family: "Cinzel", serif;
+        font-size: 18px;
+        letter-spacing: 0.08em;
+        color: var(--gold);
+        margin-top: 10px;
+      }
+
+      .note {
+        font-size: 11px;
+        color: #777;
+        margin-top: 8px;
+      }
+
+      .cta {
+        margin-top: 36px;
+        font-size: 12px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        display: inline-flex;
+        border-bottom: 1px solid var(--ink);
+        padding-bottom: 6px;
+      }
+
+      @media (min-width: 900px) {
+        .hero {
+          grid-template-columns: 1.1fr 0.9fr;
+          gap: 72px;
+        }
+        .info-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <header class="site-header" role="banner">
+          <a class="brand-link font-cinzel" href="index.html" aria-label="FOmusトップページへ">FOMUS</a>
+          <div class="lang-selector">
+            <i data-lucide="globe" style="width:12px;"></i>
+            <select id="lang-select">
+              <option value="ja">JP</option>
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+              <option value="ar">عربي</option>
+            </select>
+          </div>
+        </header>
+
+        <div class="hero">
+          <div>
+            <h1 class="font-cinzel hero-title">VIP Membership</h1>
+            <p class="font-serif-jp hero-sub">日本文化への特別なアクセス</p>
+          </div>
+          <div class="hero-image">
+            <img src="画像/Gemini_Generated_Image_v1b5ayv1b5ayv1b5.JPG" alt="VIP Membership">
+          </div>
+        </div>
+
+        <section class="section">
+          <h2 class="font-cinzel section-title">Overview</h2>
+          <p class="font-serif-jp">
+            FOMUSのFOMUS GLOBAL PARTNERSHIPは、日本各地に存在する「深層（Deep Japan）」に触れるための
+            プライベート・プログラムです。文化人や職人との出会いを通じて、表層では触れられない文化へ導きます。
+          </p>
+        </section>
+
+        <section class="section info-grid">
+          <div class="info-card">
+            <h3 class="font-cinzel section-title">Privileges</h3>
+            <ul class="list font-serif-jp">
+              <li>老舗の奥座敷での特別な体験</li>
+              <li>一般非公開の工房・文化施設への訪問</li>
+              <li>継承者・文化人とのプライベートセッション</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3 class="font-cinzel section-title">Membership</h3>
+            <div class="price">年会費：100万円〜</div>
+            <p class="note">※ 審査制／承認後に会費を申し受けます。</p>
+            <ul class="list font-serif-jp">
+              <li>ご興味のあるテーマのヒアリング</li>
+              <li>プログラム内容の設計</li>
+              <li>日程調整・同行アレンジ</li>
+            </ul>
+          </div>
+        </section>
+
+        <a class="cta" href="index.html#contact">Apply via Concierge</a>
+      </div>
+    </div>
+    <script>
+      const content = {
+        ja: {
+          heroTitle: "VIP Membership",
+          heroSub: "FOMUS FOMUS GLOBAL PARTNERSHIP",
+          overviewTitle: "Overview",
+          overviewText: "FOMUSのFOMUS GLOBAL PARTNERSHIPは、招待制・審査制のプログラムです。一般には決して公開されない日本文化の現場へ、FOMUSがご案内します。",
+          privilegesTitle: "Privileges",
+          privilegesList: ["予約不可の老舗料亭、紹介制の茶室への特別アクセス", "伝統工芸士の工房でのプライベート体験", "FOMUSメンバー同士のグローバルネットワーク"],
+          membershipTitle: "Membership",
+          price: "年会費：$10,000〜",
+          priceNote: "※ 招待制・審査制",
+          membershipList: ["ご興味のあるテーマのヒアリング", "プログラム内容の設計", "日程調整・同行アレンジ"],
+          ctaButton: "Apply via Concierge"
+        },
+        en: {
+          heroTitle: "VIP Membership",
+          heroSub: "FOMUS VIP Membership",
+          overviewTitle: "Overview",
+          overviewText: "The FOMUS VIP Membership is an invitation-only, review-based program. We guide you to the hidden realms of Japanese culture that are never open to the public.",
+          privilegesTitle: "Privileges",
+          privilegesList: ["Exclusive access to reservation-only ryotei and invitation-only tea rooms", "Private experiences at traditional craftsmen's workshops", "Global network of FOMUS members"],
+          membershipTitle: "Membership",
+          price: "Annual Fee: From $10,000",
+          priceNote: "※ By invitation and review only",
+          membershipList: ["Hearing about your themes of interest", "Program content design", "Schedule coordination & accompaniment arrangement"],
+          ctaButton: "Apply via Concierge"
+        },
+        fr: {
+          heroTitle: "VIP Membership",
+          heroSub: "FOMUS VIP Membership",
+          overviewTitle: "Aperçu",
+          overviewText: "L'adhésion VIP FOMUS est un programme sur invitation et examen uniquement. Nous vous guidons vers les royaumes cachés de la culture japonaise jamais ouverts au public.",
+          privilegesTitle: "Privilèges",
+          privilegesList: ["Accès exclusif aux ryotei sur réservation et salons de thé sur invitation", "Expériences privées dans les ateliers d'artisans traditionnels", "Réseau mondial des membres FOMUS"],
+          membershipTitle: "Adhésion",
+          price: "Cotisation annuelle : à partir de 10 000 $",
+          priceNote: "※ Sur invitation et examen uniquement",
+          membershipList: ["Écoute de vos thèmes d'intérêt", "Conception du contenu du programme", "Coordination des horaires & arrangement d'accompagnement"],
+          ctaButton: "Postuler via Conciergerie"
+        },
+        ar: {
+          heroTitle: "VIP Membership",
+          heroSub: "FOMUS VIP Membership",
+          overviewTitle: "نظرة عامة",
+          overviewText: "عضوية FOMUS VIP هي برنامج بالدعوة والمراجعة فقط. نرشدك إلى عوالم الثقافة اليابانية المخفية التي لا تُفتح للعامة أبداً.",
+          privilegesTitle: "الامتيازات",
+          privilegesList: ["وصول حصري إلى مطاعم ريوتي بالحجز فقط وغرف الشاي بالدعوة", "تجارب خاصة في ورش الحرفيين التقليديين", "شبكة عالمية لأعضاء FOMUS"],
+          membershipTitle: "العضوية",
+          price: "الرسوم السنوية: تبدأ من 10,000 دولار",
+          priceNote: "※ بالدعوة والمراجعة فقط",
+          membershipList: ["الاستماع لمواضيع اهتمامك", "تصميم محتوى البرنامج", "تنسيق الجدول وترتيب المرافقة"],
+          ctaButton: "تقدم عبر الكونسيرج"
+        }
+      };
+
+      let lang = "ja";
+      const langSelect = document.getElementById("lang-select");
+
+      const renderContent = () => {
+        const t = content[lang];
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+        langSelect.value = lang;
+
+        document.querySelector(".hero-title").textContent = t.heroTitle;
+        document.querySelector(".hero-sub").textContent = t.heroSub;
+
+        const sections = document.querySelectorAll(".section");
+        sections[0].querySelector(".section-title").textContent = t.overviewTitle;
+        sections[0].querySelector("p").textContent = t.overviewText;
+
+        const cards = document.querySelectorAll(".info-card");
+        cards[0].querySelector(".section-title").textContent = t.privilegesTitle;
+        cards[0].querySelector(".list").innerHTML = t.privilegesList.map(li => `<li>${li}</li>`).join("");
+        cards[1].querySelector(".section-title").textContent = t.membershipTitle;
+        cards[1].querySelector(".price").textContent = t.price;
+        cards[1].querySelector(".note").textContent = t.priceNote;
+        cards[1].querySelector(".list").innerHTML = t.membershipList.map(li => `<li>${li}</li>`).join("");
+
+        document.querySelector(".cta").textContent = t.ctaButton;
+
+        if (window.lucide) window.lucide.createIcons();
+      };
+
+      langSelect.addEventListener("change", (e) => {
+        lang = e.target.value;
+        renderContent();
+      });
+
+      renderContent();
+    </script>
+  </body>
+</html>

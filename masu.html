@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MASU 枡 - 1300年の伝統工芸 | FOMUS</title>
+    <meta name="description" content="FOMUSの枡は1300年の歴史を持つ日本の伝統工芸品。東海地方の檜を使い職人が手作り。独自コーティング技術で水洗い可能な実用的な枡。法人ギフト・記念品にも対応。" />
+
+    <!-- OGP Tags -->
+    <meta property="og:title" content="MASU 枡 - 1300年の伝統工芸 | FOMUS" />
+    <meta property="og:description" content="1300年の歴史を持つ枡。職人手作り、檜の香り、洗える実用性を兼ね備えた現代の伝統工芸品。" />
+    <meta property="og:image" content="https://fomusglobal.com/images/masu-og.jpg" />
+    <meta property="og:url" content="https://fomusglobal.com/masu.html" />
+    <meta property="og:type" content="product" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MASU 枡 - 1300年の伝統工芸 | FOMUS" />
+    <meta name="twitter:description" content="1300年の歴史を持つ枡。職人手作り、檜の香り、洗える実用性を兼ね備えた現代の伝統工芸品。" />
+    <meta name="twitter:image" content="https://fomusglobal.com/images/masu-og.jpg" />
+
+    <link rel="canonical" href="https://fomusglobal.com/masu.html" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta name="theme-color" content="#1a1a1a" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Noto+Sans+JP:wght@300;400&family=Noto+Serif+JP:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <style>
+      :root {
+        --bg: #f7f6f2;
+        --bg-soft: #fafaf8;
+        --ink: #1c1c1c;
+        --muted: #5b5b5b;
+        --accent: #c8b68a;
+        --line: #e6e6e6;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Noto Sans JP", sans-serif;
+        color: var(--ink);
+        background: linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
+        line-height: 2.0;
+        letter-spacing: 0.02em;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .font-serif { font-family: "Noto Serif JP", serif; }
+      .font-cinzel { font-family: "Cinzel", serif; }
+
+      .container {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 44px;
+      }
+
+      .page {
+        padding: 80px 0 120px;
+      }
+
+      .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 44px;
+        background: rgba(247, 246, 242, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 30px rgba(0,0,0,0.03);
+        transition: all 0.3s ease;
+      }
+      .brand-link {
+        font-size: 13px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+      }
+      .page {
+        padding-top: 100px;
+      }
+
+      .lang-selector {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border: 1px solid var(--ink);
+        padding: 4px 10px;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+      }
+      .lang-selector select {
+        background: transparent;
+        border: none;
+        color: inherit;
+        font-family: inherit;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      .lang-selector select option {
+        background: var(--bg);
+        color: var(--ink);
+      }
+
+      /* Accessibility - Focus Styles */
+      a:focus, button:focus, select:focus, input:focus {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+      }
+
+      /* RTL Support */
+      [dir="rtl"] { text-align: right; }
+      [dir="rtl"] .site-header { flex-direction: row-reverse; }
+      [dir="rtl"] .hero { direction: rtl; }
+      [dir="rtl"] .strength-list { padding-left: 0; padding-right: 16px; }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 28px;
+        align-items: start;
+        margin-bottom: 44px;
+      }
+
+      .hero-title {
+        font-size: clamp(2rem, 3.6vw, 3rem);
+        letter-spacing: 0.1em;
+        margin-bottom: 10px;
+      }
+
+      .hero-sub {
+        font-size: 13.5px;
+        color: var(--muted);
+        margin-bottom: 16px;
+      }
+
+      .hero-body {
+        font-size: 13px;
+        color: var(--muted);
+        max-width: 32em;
+        line-height: 1.9;
+      }
+      .hero-body p + p {
+        margin-top: 14px;
+      }
+
+      .hero-image {
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 16px;
+        box-shadow: 0 18px 40px rgba(0,0,0,0.06);
+      }
+      .hero-image img {
+        max-height: 360px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .hero-media {
+        max-width: 560px;
+      }
+
+      .section {
+        padding: 32px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .section:first-of-type {
+        border-top: none;
+        padding-top: 0;
+      }
+
+      .section-title {
+        font-size: 18px;
+        letter-spacing: 0.08em;
+        margin-bottom: 14px;
+      }
+
+      .section-text {
+        font-size: 13px;
+        color: var(--ink);
+        line-height: 1.9;
+      }
+      .section-text p + p {
+        margin-top: 14px;
+      }
+
+      .section-subtle {
+        color: var(--muted);
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 26px;
+        align-items: center;
+      }
+
+      .soft-panel {
+        border: 1px solid var(--line);
+        background: #ffffff;
+        padding: 22px 24px;
+      }
+      .soft-panel.center {
+        text-align: center;
+      }
+      .soft-panel.center .section-text {
+        margin: 0 auto;
+        max-width: 32em;
+      }
+      .soft-panel.center .cta {
+        margin-top: 14px;
+      }
+
+      .strengths {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+
+      .strength-card {
+        border: 1px solid var(--line);
+        background: #ffffff;
+        padding: 22px 24px;
+      }
+
+      .strength-number {
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        color: var(--muted);
+        margin-bottom: 10px;
+      }
+
+      .strength-title {
+        font-size: 16px;
+        letter-spacing: 0.08em;
+        margin-bottom: 10px;
+      }
+
+      .strength-sub {
+        font-size: 12px;
+        color: var(--muted);
+        margin-bottom: 10px;
+      }
+
+      .strength-list {
+        margin-top: 12px;
+        padding-left: 16px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .ghost-image {
+        border: 1px solid var(--line);
+        background: linear-gradient(135deg, #f1efe8 0%, #ffffff 100%);
+        height: 220px;
+      }
+
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 12px 24px;
+        border: 1px solid var(--ink);
+        font-size: 12px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        background: transparent;
+      }
+
+      .footer {
+        border-top: 1px solid var(--line);
+        padding: 40px 0 20px;
+        font-size: 11px;
+        color: var(--muted);
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 20px;
+        margin: 14px 0;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      @media (min-width: 900px) {
+        .hero {
+          grid-template-columns: 1.2fr 0.8fr;
+          gap: 48px;
+        }
+
+        .split {
+          grid-template-columns: 1.1fr 0.9fr;
+          gap: 48px;
+        }
+
+        .strengths {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 24px;
+        }
+
+        .ghost-image {
+          height: 280px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <header class="site-header" role="banner">
+          <a class="brand-link font-cinzel" href="index.html" aria-label="FOmusトップページへ">FOMUS</a>
+          <div class="lang-selector">
+            <i data-lucide="globe" style="width:12px;"></i>
+            <select id="lang-select">
+              <option value="ja">JP</option>
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+              <option value="ar">عربي</option>
+            </select>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div>
+            <h1 class="font-serif hero-title">枡とは</h1>
+            <p class="font-serif hero-sub">日本の「想い」をのせる器。</p>
+            <div class="font-serif hero-body">
+              <p>枡は、千年以上にわたり日本の暮らしとともに使われてきた器です。</p>
+              <p>もともとは量を量るための道具として生まれ、やがて祝い、繁栄、門出を象徴する存在へと育まれてきました。</p>
+              <p>「ます（増す）」という言葉が示すように、枡は人の願いや想いをそっと託す器でもあります。</p>
+              <p>今もなお、節目の場や特別な時間に選ばれ続けている理由は、そこに静かな意味と美しさが宿っているからです。</p>
+            </div>
+          </div>
+          <div class="hero-media">
+            <div class="hero-image">
+              <img src="画像/MASU%20TOP.jpg" alt="東海地方の檜で作られたFOMUSの枡、金箔装飾付き" loading="lazy">
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="font-serif section-title">素材と向き合うものづくり</h2>
+          <div class="font-serif section-text section-subtle">
+            <p>素材から、価値を設計する。</p>
+            <p>FOMUSの枡は、建築や建具に使われた国産檜の端材から生まれます。</p>
+            <p>新たに木を伐るのではなく、役目を終えた素材に、もう一度価値を与える。それが、FOMUSのものづくりの原点です。</p>
+            <p>木曽檜をはじめとする国産材は、自然の香り、やわらかな質感、穏やかな存在感を備えています。</p>
+            <p>製作の過程で生まれる鉋屑も、梱包材として再利用され、箱を開けた瞬間にほのかな木の香りが広がります。</p>
+            <p>FOMUSの枡は、自然とともにあり、時間とともに育つプロダクトです。</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="font-serif section-title">FOMUSの3つの強み</h2>
+          <div class="strengths">
+            <div class="strength-card">
+              <div class="strength-number font-cinzel">01</div>
+              <div class="font-serif strength-title">耐える美しさ</div>
+              <div class="font-serif strength-sub">特殊コーティング（防水・耐久）</div>
+              <div class="font-serif section-text">
+                <p>FOMUSの枡は、独自のコーティング技術により水分やアルコールが染み込みにくく設計されています。</p>
+                <p>木の質感を損なうことなく、飲食店や業務用途でも安心して使える耐久性を実現。</p>
+                <p>日常の中で使われ続けることで、その価値が静かに深まっていきます。</p>
+              </div>
+            </div>
+            <div class="strength-card">
+              <div class="strength-number font-cinzel">02</div>
+              <div class="font-serif strength-title">意味を宿す意匠</div>
+              <div class="font-serif strength-sub">金箔加工・意匠表現</div>
+              <div class="font-serif section-text">
+                <p>金箔や意匠を施すことで、枡は「祝い」や「節目」を象徴する存在へと昇華します。</p>
+                <p>派手さではなく、品格としての輝きを添えるための表現。</p>
+                <p>企業の節目や、大切な方への贈り物としても多く選ばれています。</p>
+              </div>
+            </div>
+            <div class="strength-card">
+              <div class="strength-number font-cinzel">03</div>
+              <div class="font-serif strength-title">用途に寄り添う設計</div>
+              <div class="font-serif strength-sub">専用蓋オプション対応</div>
+              <div class="font-serif section-text">
+                <p>FOMUSでは、枡専用の蓋もご用意しています。</p>
+              </div>
+              <ul class="strength-list font-serif">
+                <li>保管性を高めたい</li>
+                <li>贈答用として整えたい</li>
+                <li>空間演出の一部として使いたい</li>
+              </ul>
+              <div class="font-serif section-text">
+                <p>用途に応じて、枡を“器”から“佇まい”へと昇華させます。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="soft-panel center">
+            <h2 class="font-serif section-title">ご案内</h2>
+            <div class="font-serif section-text">
+              <p>FOMUSの枡は、用途や数量に応じて個別にご案内しております。</p>
+              <p>法人利用・贈答・特別なご相談も承ります。</p>
+            </div>
+            <a class="cta" href="index.html#contact">枡について相談する</a>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="font-cinzel">FOMUS</div>
+          <div class="footer-links">
+            <a href="#">Journal</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+          <div>&copy; FOMUS</div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      const content = {
+        ja: {
+          heroTitle: "枡とは",
+          heroSub: "日本の「想い」をのせる器。",
+          heroBody: [
+            "枡は、千年以上にわたり日本の暮らしとともに使われてきた器です。",
+            "もともとは量を量るための道具として生まれ、やがて祝い、繁栄、門出を象徴する存在へと育まれてきました。",
+            "「ます（増す）」という言葉が示すように、枡は人の願いや想いをそっと託す器でもあります。",
+            "今もなお、節目の場や特別な時間に選ばれ続けている理由は、そこに静かな意味と美しさが宿っているからです。"
+          ],
+          section1Title: "素材と向き合うものづくり",
+          section1Body: [
+            "素材から、価値を設計する。",
+            "FOMUSの枡は、建築や建具に使われた国産檜の端材から生まれます。",
+            "新たに木を伐るのではなく、役目を終えた素材に、もう一度価値を与える。それが、FOMUSのものづくりの原点です。",
+            "木曽檜をはじめとする国産材は、自然の香り、やわらかな質感、穏やかな存在感を備えています。",
+            "製作の過程で生まれる鉋屑も、梱包材として再利用され、箱を開けた瞬間にほのかな木の香りが広がります。",
+            "FOMUSの枡は、自然とともにあり、時間とともに育つプロダクトです。"
+          ],
+          section2Title: "FOMUSの3つの強み",
+          strength1Title: "耐える美しさ",
+          strength1Sub: "特殊コーティング（防水・耐久）",
+          strength1Body: [
+            "FOMUSの枡は、独自のコーティング技術により水分やアルコールが染み込みにくく設計されています。",
+            "木の質感を損なうことなく、飲食店や業務用途でも安心して使える耐久性を実現。",
+            "日常の中で使われ続けることで、その価値が静かに深まっていきます。"
+          ],
+          strength2Title: "意味を宿す意匠",
+          strength2Sub: "金箔加工・意匠表現",
+          strength2Body: [
+            "金箔や意匠を施すことで、枡は「祝い」や「節目」を象徴する存在へと昇華します。",
+            "派手さではなく、品格としての輝きを添えるための表現。",
+            "企業の節目や、大切な方への贈り物としても多く選ばれています。"
+          ],
+          strength3Title: "用途に寄り添う設計",
+          strength3Sub: "専用蓋オプション対応",
+          strength3Body: ["FOMUSでは、枡専用の蓋もご用意しています。"],
+          strength3List: ["保管性を高めたい", "贈答用として整えたい", "空間演出の一部として使いたい"],
+          strength3End: ["用途に応じて、枡を"器"から"佇まい"へと昇華させます。"],
+          ctaTitle: "ご案内",
+          ctaBody: ["FOMUSの枡は、用途や数量に応じて個別にご案内しております。", "法人利用・贈答・特別なご相談も承ります。"],
+          ctaButton: "枡について相談する"
+        },
+        en: {
+          heroTitle: "What is Masu",
+          heroSub: "A vessel that carries Japanese wishes.",
+          heroBody: [
+            "Masu has been used in Japanese daily life for over a thousand years.",
+            "Originally created as a measuring tool, it evolved into a symbol of celebration, prosperity, and new beginnings.",
+            "As the word 'masu' (to increase) suggests, it is also a vessel that quietly carries people's wishes and thoughts.",
+            "It continues to be chosen for milestone moments and special occasions because of the quiet meaning and beauty it holds."
+          ],
+          section1Title: "Craftsmanship with Materials",
+          section1Body: [
+            "Designing value from materials.",
+            "FOMUS masu is made from leftover domestic Japanese cypress used in architecture and fittings.",
+            "Rather than cutting new trees, we give value once more to materials that have completed their purpose. This is the origin of FOMUS craftsmanship.",
+            "Domestic materials including Kiso cypress possess natural fragrance, soft texture, and gentle presence.",
+            "Wood shavings from the production process are reused as packaging material, releasing a subtle wood fragrance when the box is opened.",
+            "FOMUS masu is a product that exists with nature and grows with time."
+          ],
+          section2Title: "Three Strengths of FOMUS",
+          strength1Title: "Enduring Beauty",
+          strength1Sub: "Special Coating (Waterproof & Durable)",
+          strength1Body: [
+            "FOMUS masu is designed with proprietary coating technology that prevents water and alcohol from penetrating.",
+            "Without compromising the wood's texture, we achieve durability safe for restaurants and commercial use.",
+            "Through continued daily use, its value quietly deepens."
+          ],
+          strength2Title: "Design with Meaning",
+          strength2Sub: "Gold Leaf Processing & Design Expression",
+          strength2Body: [
+            "By applying gold leaf and design elements, masu is elevated to a symbol of celebration and milestones.",
+            "Not flashiness, but an expression that adds dignity.",
+            "Often chosen for corporate milestones and gifts for important people."
+          ],
+          strength3Title: "Design for Purpose",
+          strength3Sub: "Dedicated Lid Option Available",
+          strength3Body: ["FOMUS also offers dedicated lids for masu."],
+          strength3List: ["For better storage", "For gift presentation", "As part of space design"],
+          strength3End: ["Depending on the purpose, masu transforms from 'vessel' to 'presence'."],
+          ctaTitle: "Inquiry",
+          ctaBody: ["FOMUS masu is individually guided based on purpose and quantity.", "We also handle corporate use, gifts, and special consultations."],
+          ctaButton: "Consult about Masu"
+        },
+        fr: {
+          heroTitle: "Qu'est-ce que le Masu",
+          heroSub: "Un récipient qui porte les souhaits japonais.",
+          heroBody: [
+            "Le masu est utilisé dans la vie quotidienne japonaise depuis plus de mille ans.",
+            "Créé à l'origine comme outil de mesure, il est devenu un symbole de célébration, de prospérité et de nouveaux départs.",
+            "Comme le mot 'masu' (augmenter) le suggère, c'est aussi un récipient qui porte silencieusement les souhaits et pensées des gens.",
+            "Il continue d'être choisi pour les moments importants et les occasions spéciales en raison du sens et de la beauté qu'il recèle."
+          ],
+          section1Title: "Artisanat avec les Matériaux",
+          section1Body: [
+            "Concevoir la valeur à partir des matériaux.",
+            "Le masu FOMUS est fabriqué à partir de chutes de cyprès japonais domestique utilisé dans l'architecture.",
+            "Plutôt que de couper de nouveaux arbres, nous donnons une nouvelle valeur aux matériaux qui ont accompli leur mission. C'est l'origine de l'artisanat FOMUS.",
+            "Les matériaux domestiques, y compris le cyprès de Kiso, possèdent un parfum naturel, une texture douce et une présence apaisante.",
+            "Les copeaux de bois du processus de production sont réutilisés comme matériau d'emballage, libérant un subtil parfum de bois à l'ouverture.",
+            "Le masu FOMUS est un produit qui existe avec la nature et grandit avec le temps."
+          ],
+          section2Title: "Les Trois Forces de FOMUS",
+          strength1Title: "Beauté Durable",
+          strength1Sub: "Revêtement Spécial (Imperméable & Durable)",
+          strength1Body: [
+            "Le masu FOMUS est conçu avec une technologie de revêtement propriétaire qui empêche l'eau et l'alcool de pénétrer.",
+            "Sans compromettre la texture du bois, nous obtenons une durabilité sûre pour les restaurants et l'usage commercial.",
+            "Grâce à une utilisation quotidienne continue, sa valeur s'approfondit silencieusement."
+          ],
+          strength2Title: "Design avec Sens",
+          strength2Sub: "Traitement à la Feuille d'Or & Expression Design",
+          strength2Body: [
+            "En appliquant de la feuille d'or et des éléments de design, le masu est élevé au rang de symbole de célébration.",
+            "Pas de clinquant, mais une expression qui ajoute de la dignité.",
+            "Souvent choisi pour les jalons d'entreprise et les cadeaux pour les personnes importantes."
+          ],
+          strength3Title: "Design pour l'Usage",
+          strength3Sub: "Option Couvercle Dédié Disponible",
+          strength3Body: ["FOMUS propose également des couvercles dédiés pour le masu."],
+          strength3List: ["Pour un meilleur stockage", "Pour la présentation de cadeaux", "Comme élément de design d'espace"],
+          strength3End: ["Selon l'usage, le masu se transforme de 'récipient' en 'présence'."],
+          ctaTitle: "Renseignements",
+          ctaBody: ["Le masu FOMUS est guidé individuellement selon l'usage et la quantité.", "Nous gérons également l'usage professionnel, les cadeaux et les consultations spéciales."],
+          ctaButton: "Consulter à propos du Masu"
+        },
+        ar: {
+          heroTitle: "ما هو الماسو",
+          heroSub: "وعاء يحمل الأمنيات اليابانية.",
+          heroBody: [
+            "استُخدم الماسو في الحياة اليومية اليابانية لأكثر من ألف عام.",
+            "صُنع في الأصل كأداة قياس، ثم تطور ليصبح رمزاً للاحتفال والازدهار والبدايات الجديدة.",
+            "كما تشير كلمة 'ماسو' (الزيادة)، فهو أيضاً وعاء يحمل بهدوء أمنيات الناس وأفكارهم.",
+            "يستمر اختياره للحظات المهمة والمناسبات الخاصة بسبب المعنى والجمال الهادئ الذي يحمله."
+          ],
+          section1Title: "الحرفية مع المواد",
+          section1Body: [
+            "تصميم القيمة من المواد.",
+            "ماسو FOMUS مصنوع من بقايا خشب السرو الياباني المحلي المستخدم في العمارة.",
+            "بدلاً من قطع أشجار جديدة، نعطي قيمة مرة أخرى للمواد التي أكملت غرضها. هذا هو أصل حرفية FOMUS.",
+            "المواد المحلية بما في ذلك سرو كيسو تمتلك عطراً طبيعياً وملمساً ناعماً وحضوراً لطيفاً.",
+            "نشارة الخشب من عملية الإنتاج يُعاد استخدامها كمواد تغليف، مطلقةً عطر خشب خفيف عند فتح الصندوق.",
+            "ماسو FOMUS منتج يوجد مع الطبيعة وينمو مع الوقت."
+          ],
+          section2Title: "نقاط القوة الثلاث لـ FOMUS",
+          strength1Title: "جمال دائم",
+          strength1Sub: "طلاء خاص (مقاوم للماء ومتين)",
+          strength1Body: [
+            "ماسو FOMUS مصمم بتقنية طلاء خاصة تمنع تسرب الماء والكحول.",
+            "دون المساس بملمس الخشب، نحقق متانة آمنة للمطاعم والاستخدام التجاري.",
+            "من خلال الاستخدام اليومي المستمر، تتعمق قيمته بهدوء."
+          ],
+          strength2Title: "تصميم ذو معنى",
+          strength2Sub: "معالجة ورق الذهب والتعبير التصميمي",
+          strength2Body: [
+            "بتطبيق ورق الذهب وعناصر التصميم، يرتقي الماسو ليصبح رمزاً للاحتفال.",
+            "ليس البهرجة، بل تعبير يضيف الكرامة.",
+            "يُختار غالباً لمعالم الشركات والهدايا للأشخاص المهمين."
+          ],
+          strength3Title: "تصميم للغرض",
+          strength3Sub: "خيار غطاء مخصص متاح",
+          strength3Body: ["FOMUS تقدم أيضاً أغطية مخصصة للماسو."],
+          strength3List: ["لتخزين أفضل", "لتقديم الهدايا", "كجزء من تصميم المساحة"],
+          strength3End: ["حسب الغرض، يتحول الماسو من 'وعاء' إلى 'حضور'."],
+          ctaTitle: "استفسار",
+          ctaBody: ["يتم توجيه ماسو FOMUS بشكل فردي بناءً على الغرض والكمية.", "نتعامل أيضاً مع الاستخدام المؤسسي والهدايا والاستشارات الخاصة."],
+          ctaButton: "استشر حول الماسو"
+        }
+      };
+
+      let lang = "ja";
+      const langSelect = document.getElementById("lang-select");
+
+      const renderContent = () => {
+        const t = content[lang];
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+        langSelect.value = lang;
+
+        document.querySelector(".hero-title").textContent = t.heroTitle;
+        document.querySelector(".hero-sub").textContent = t.heroSub;
+        document.querySelector(".hero-body").innerHTML = t.heroBody.map(p => `<p>${p}</p>`).join("");
+
+        document.querySelectorAll(".section")[0].querySelector(".section-title").textContent = t.section1Title;
+        document.querySelectorAll(".section")[0].querySelector(".section-text").innerHTML = t.section1Body.map(p => `<p>${p}</p>`).join("");
+
+        document.querySelectorAll(".section")[1].querySelector(".section-title").textContent = t.section2Title;
+
+        const cards = document.querySelectorAll(".strength-card");
+        cards[0].querySelector(".strength-title").textContent = t.strength1Title;
+        cards[0].querySelector(".strength-sub").textContent = t.strength1Sub;
+        cards[0].querySelector(".section-text").innerHTML = t.strength1Body.map(p => `<p>${p}</p>`).join("");
+
+        cards[1].querySelector(".strength-title").textContent = t.strength2Title;
+        cards[1].querySelector(".strength-sub").textContent = t.strength2Sub;
+        cards[1].querySelector(".section-text").innerHTML = t.strength2Body.map(p => `<p>${p}</p>`).join("");
+
+        cards[2].querySelector(".strength-title").textContent = t.strength3Title;
+        cards[2].querySelector(".strength-sub").textContent = t.strength3Sub;
+        cards[2].querySelectorAll(".section-text")[0].innerHTML = t.strength3Body.map(p => `<p>${p}</p>`).join("");
+        cards[2].querySelector(".strength-list").innerHTML = t.strength3List.map(li => `<li>${li}</li>`).join("");
+        cards[2].querySelectorAll(".section-text")[1].innerHTML = t.strength3End.map(p => `<p>${p}</p>`).join("");
+
+        document.querySelector(".soft-panel .section-title").textContent = t.ctaTitle;
+        document.querySelector(".soft-panel .section-text").innerHTML = t.ctaBody.map(p => `<p>${p}</p>`).join("");
+        document.querySelector(".soft-panel .cta").textContent = t.ctaButton;
+
+        if (window.lucide) window.lucide.createIcons();
+      };
+
+      langSelect.addEventListener("change", (e) => {
+        lang = e.target.value;
+        renderContent();
+      });
+
+      renderContent();
+    </script>
+  </body>
+</html>
