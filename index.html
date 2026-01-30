@@ -891,14 +891,16 @@
         margin: 32px auto 0;
       }
       .vip-card-grid {
-        display: grid;
-        grid-template-columns: 1.1fr 0.9fr;
+        display: flex;
+        flex-direction: column;
         gap: 24px;
-        align-items: start;
+        align-items: stretch;
       }
       .vip-meta {
-        border-left: 1px solid rgba(255,255,255,0.12);
-        padding-left: 24px;
+        border-left: none;
+        border-top: 1px solid rgba(255,255,255,0.12);
+        padding-top: 24px;
+        text-align: center;
       }
       .vip-points li {
         display: flex;
@@ -1178,10 +1180,17 @@
           padding: 28px;
         }
         .vip-card-grid {
-          grid-template-columns: 1fr 0.9fr;
+          display: grid;
+          grid-template-columns: 1.1fr 0.9fr;
+          gap: 24px;
+          align-items: start;
         }
         .vip-meta {
-          padding-left: 20px;
+          border-left: 1px solid rgba(255,255,255,0.12);
+          border-top: none;
+          padding-left: 24px;
+          padding-top: 0;
+          text-align: left;
         }
         .vip-points li {
           margin-bottom: 12px;
