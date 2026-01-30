@@ -1074,6 +1074,29 @@
       }
       .footer-nav a:hover { color: #fff; }
 
+      /* Mobile Styles */
+      @media (max-width: 600px) {
+        .hero-bg video {
+          object-fit: contain;
+          object-position: center;
+          background: #000;
+        }
+        .vip-card-grid {
+          grid-template-columns: 1fr;
+          gap: 28px;
+        }
+        .vip-meta {
+          border-left: none;
+          border-top: 1px solid rgba(255,255,255,0.12);
+          padding-left: 0;
+          padding-top: 24px;
+        }
+        .vip-points li {
+          font-size: 14px;
+          line-height: 1.8;
+        }
+      }
+
       @media (min-width: 900px) {
         .philosophy.section-pad {
           padding: 120px 0;
@@ -1514,8 +1537,8 @@
           },
           vip: {
             title: "INVITATION ONLY",
-            sub: "FOMUS FOMUS GLOBAL PARTNERSHIP",
-            desc: "FOMUSのFOMUS GLOBAL PARTNERSHIPは、招待制・審査制のプログラムです。\n一般には決して公開されない日本文化の現場へ、FOMUSがご案内します。",
+            sub: "FOMUS GLOBAL PARTNERSHIP",
+            desc: "FOMUS GLOBAL PARTNERSHIPは、招待制・審査制のプログラムです。\n一般には決して公開されない日本文化の現場へ、FOMUSがご案内します。",
             list: [
               "予約不可の老舗料亭、紹介制の茶室への特別アクセス",
               "伝統工芸士の工房でのプライベート体験",
