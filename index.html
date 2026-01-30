@@ -1075,25 +1075,45 @@
       .footer-nav a:hover { color: #fff; }
 
       /* Mobile Styles */
-      @media (max-width: 600px) {
+      @media (max-width: 768px) {
         .hero-bg video {
           object-fit: contain;
           object-position: center;
           background: #000;
         }
+        .vip-card {
+          padding: 24px 20px;
+          margin: 24px 16px 0;
+        }
         .vip-card-grid {
-          grid-template-columns: 1fr;
-          gap: 28px;
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+        }
+        .vip-points {
+          margin-bottom: 24px;
+        }
+        .vip-points li {
+          font-size: 14px;
+          line-height: 1.9;
+          margin-bottom: 14px;
         }
         .vip-meta {
           border-left: none;
           border-top: 1px solid rgba(255,255,255,0.12);
           padding-left: 0;
           padding-top: 24px;
+          text-align: center;
         }
-        .vip-points li {
-          font-size: 14px;
-          line-height: 1.8;
+        .vip-meta .vip-price {
+          font-size: 20px;
+        }
+        .vip-meta .note {
+          font-size: 12px;
+        }
+        .vip-meta .gold-btn {
+          width: 100%;
+          padding: 16px 24px;
         }
       }
 
@@ -1648,8 +1668,8 @@
           },
           vip: {
             title: "INVITATION ONLY",
-            sub: "FOMUS VIP Membership",
-            desc: "The FOMUS VIP Membership is an invitation-only, review-based program.\nWe guide you to the hidden realms of Japanese culture that are never open to the public.",
+            sub: "FOMUS GLOBAL PARTNERSHIP",
+            desc: "The FOMUS GLOBAL PARTNERSHIP is an invitation-only, review-based program.\nWe guide you to the hidden realms of Japanese culture that are never open to the public.",
             list: [
               "Exclusive access to reservation-only ryotei and invitation-only tea rooms",
               "Private experiences at traditional craftsmen's workshops",
@@ -1758,8 +1778,8 @@
           },
           vip: {
             title: "INVITATION ONLY",
-            sub: "FOMUS VIP Membership",
-            desc: "L'adhésion VIP FOMUS est un programme sur invitation et examen uniquement.\nNous vous guidons vers les royaumes cachés de la culture japonaise jamais ouverts au public.",
+            sub: "FOMUS GLOBAL PARTNERSHIP",
+            desc: "Le FOMUS GLOBAL PARTNERSHIP est un programme sur invitation et examen uniquement.\nNous vous guidons vers les royaumes cachés de la culture japonaise jamais ouverts au public.",
             list: [
               "Accès exclusif aux ryotei sur réservation et salons de thé sur invitation",
               "Expériences privées dans les ateliers d'artisans traditionnels",
@@ -1868,8 +1888,8 @@
           },
           vip: {
             title: "INVITATION ONLY",
-            sub: "FOMUS VIP Membership",
-            desc: "عضوية FOMUS VIP هي برنامج بالدعوة والمراجعة فقط.\nنرشدك إلى عوالم الثقافة اليابانية المخفية التي لا تُفتح للعامة أبداً.",
+            sub: "FOMUS GLOBAL PARTNERSHIP",
+            desc: "FOMUS GLOBAL PARTNERSHIP هو برنامج بالدعوة والمراجعة فقط.\nنرشدك إلى عوالم الثقافة اليابانية المخفية التي لا تُفتح للعامة أبداً.",
             list: [
               "وصول حصري إلى مطاعم ريوتي بالحجز فقط وغرف الشاي بالدعوة",
               "تجارب خاصة في ورش الحرفيين التقليديين",
