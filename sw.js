@@ -1,5 +1,5 @@
 // FOMUS Service Worker
-const CACHE_NAME = 'fomus-cache-v1';
+const CACHE_NAME = 'fomus-cache-v2';
 const urlsToCache = [
   '/',
   '/index.html',
