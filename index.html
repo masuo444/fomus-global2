@@ -892,16 +892,15 @@
         margin: 32px auto 0;
       }
       .vip-card-grid {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
         gap: 24px;
-        align-items: stretch;
+        align-items: start;
       }
       .vip-meta {
-        border-left: none;
-        border-top: 1px solid rgba(255,255,255,0.12);
-        padding-top: 24px;
-        text-align: center;
+        border-left: 1px solid rgba(255,255,255,0.12);
+        padding-left: 24px;
+        text-align: left;
       }
       .vip-points li {
         display: flex;
