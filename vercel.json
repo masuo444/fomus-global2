@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "https://www.fomus.jp/index-en.html", "permanent": true },
+    { "source": "/index.html", "destination": "https://www.fomus.jp/index-en.html", "permanent": true },
+    { "source": "/architectural.html", "destination": "https://www.fomus.jp/architectural.html", "permanent": true },
+    { "source": "/architectural", "destination": "https://www.fomus.jp/architectural.html", "permanent": true },
+    { "source": "/masu.html", "destination": "https://www.fomus.jp/masu-en.html", "permanent": true },
+    { "source": "/masu", "destination": "https://www.fomus.jp/masu-en.html", "permanent": true },
+    { "source": "/parure.html", "destination": "https://kumiki.fomusglobal.com/", "permanent": true },
+    { "source": "/guild.html", "destination": "https://guild.fomusglobal.com/", "permanent": true },
+    { "source": "/vip.html", "destination": "https://www.fomus.jp/about-en.html", "permanent": true },
+    { "source": "/:path*", "destination": "https://www.fomus.jp/index-en.html", "permanent": true }
+  ]
+}
